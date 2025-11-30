@@ -1,0 +1,68 @@
+/* Grundstil */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #fff;
+  color: #333;
+}
+
+h1,
+h2 {
+  text-align: center;
+  padding: 24px 0 24px 0;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+/* Hero Section */
+
+/* Croissant Cards */
+.new-section {
+  text-align: center;
+  background-color: #f0f0f0;
+  padding: 0 120px 32px 120px;
+}
+
+.card-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 150px;
+}
+
+.card-img {
+  height: 250px;
+  width: 250px;
+  object-fit: cover;
+  border-radius: 5%;
+}
+
+/* Vergleich Section */
+.compare-section {
+  padding: 0 120px 32px 120px;
+}
+
+.compare-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hvsd-image img {
+  height: 400px;
+  width: 400px;
+  border-radius: 5%;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+
+  .hero-content,
+  .compare-content {
+    flex-direction: column;
+  }
+}
