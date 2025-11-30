@@ -3,3 +3,69 @@ body {
     margin: 0px;
     font-size: 16px;
 }
+footer {
+    background-color: #232323;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 120px;
+    padding-inline: 100px;
+}
+
+.footerLogo {
+    filter: brightness() invert();
+    height: 80px;
+}
+
+
+.socialMedia {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.Icons {
+    height: 35px;
+    fill: white;
+    vertical-align: middle;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 1px 1px lightblue;
+    
+}
+
+.social_side_by_side{
+    display: flex;
+    align-items: center;
+}
+
+.find_us {
+    font-size: 10px;
+}
+
+.footercontent {
+    display: flex;
+    align-items: center;
+}
+.Kontakt,
+.RezeptdesTagesLink,
+.Impressum,
+.Datenschutz {
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: white;
+    border-left: 1px solid #403B3B;
+    text-decoration: none;
+}
+
+.footerLinks {
+    display: flex;
+    align-items: center;
+  
+}
+
+.facebookbutton {
+    border-radius: ;
+}
