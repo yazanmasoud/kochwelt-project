@@ -7,10 +7,20 @@
     <title>Document</title>
     <link rel="stylesheet" href="contact-form.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navigation_bar.css">
     <script src="script.js"></script>
 </head>
 
 <body>
+    <header>
+        <img class="logo-img" src="./assets/logo.png" alt="">
+        <nav>
+            <a href="#">Start</a>
+            <a href="#">Rezept des Tages</a>
+            <a href="contact_form.html">Kontakt</a>
+            <a href="Impressum.html">Impressum</a>
+        </nav>
+    </header>
     <form class="contact-form" onsubmit="sendMail(event)">
         <h2>Kontaktiere Uns</h2>
         <label for="name">Dein Name:</label>
