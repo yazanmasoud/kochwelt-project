@@ -1,3 +1,4 @@
+/* main */
 main{
     display: flex;
     flex-direction: column;
@@ -8,4 +9,25 @@ main img{
     height: 250px;
     object-fit: cover;
     border-radius: 10px;
+}
+
+/* badges */
+.badges{
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.badges-form{
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    display: flex;
+    gap: 10px;
+    padding: 5px;
+}
+/* separator */
+.separator{
+    background-color: #c4c1c1;
+    width: 100vw;
+    height: 1px;
 }
