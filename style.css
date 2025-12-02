@@ -5,7 +5,9 @@ body {
      background-color: #fff;
     color: #333;
 }
-
+.headerLogo-img {
+    height: 90px;
+}
 h1,
 h2 {
     text-align: center;
