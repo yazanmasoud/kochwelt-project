@@ -66,8 +66,8 @@ p {
 }
 
 .hvsd-image img {
-    height: 400px;
-    width: 400px;
+    height: 150px;
+    width: auto;
     border-radius: 5%;
 }
 
