@@ -30,4 +30,17 @@ main img{
     background-color: #c4c1c1;
     width: 100vw;
     height: 1px;
+    margin-bottom: 30px;
+}
+/* main recepie */
+.main-recepie{
+    margin-left: 50px;
+
+}
+.recepie-head{
+    
+}
+button{
+    background-color: green;
+    color: white;
 }
