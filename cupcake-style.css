@@ -4,25 +4,36 @@ body {
     font-size: 16px;
     background-color: #fff;
     color: #333;
-    
 }
+
+header {
+    padding: 120px 120px 120px 120px;
+    justify-content: center;
+}
+
 .headerLogo-img {
     height: 90px;
-    padding: 0px 120px 0px 120px
+    
 }
-h1,
-h2 {
-    text-align: center;
-    padding: 24px 0 24px 0;
+h1 {
+    padding: 24px 120px 24px 120px;
     margin: 0;
 }
 
+.cupcake-section {
+    text-align: center;
+    padding: 24px 120px 24px 120px;
+}
+
+button {
+    background-color: green;
+    color: white;
+}
 p {
     margin: 0;
 }
 
 .cupcake-img {
-    height: 150px;
     width: 100%;
     object-fit: cover;
     border-radius: 8px;
@@ -31,6 +42,8 @@ p {
     
 h1{
     font-size: 32px;
+    display: flex;
+    padding: 50px 0px 50px 0px;
 }
 .icons {
     display: flex;
@@ -49,6 +62,12 @@ h1{
 }
 
 .main_container_icons {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.recepie-head {
+    padding: 50px 0px 50px 0px;
     display: flex;
     align-items: center;
 }
@@ -115,4 +134,3 @@ footer {
     display: flex;
     align-items: center;
 }
-
