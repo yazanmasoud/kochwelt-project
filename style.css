@@ -25,12 +25,14 @@ p {
 /* Hero Section */
 .hero-img {
     height: 300px;
+    
     border-radius: 5%;
 }
 
 .hero-content {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    gap: 50px;
     
     padding: 50px 120px 50px 120px;
 }

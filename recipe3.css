@@ -66,6 +66,14 @@ tr:nth-child(even) {
     object-fit: cover;
 
 }
+table td:first-child{
+     width: 1%;
+}
+
+table td:last-child {
+  width: 99%;
+ 
+}
 
 /* preparation */
 .preparation {
@@ -84,6 +92,7 @@ tr:nth-child(even) {
     gap: 10px;
     padding: 5px;
     width: 80px;
+    margin-bottom: 30px;
 }
 /* profil */
 .profil-img{
