@@ -48,52 +48,21 @@
         <section class="main-recepie">
             <div class="recepie-head">
                 <span>Zutaten für</span>
-                <input type="number">
-                <button>Portionen</button>
+                <input id="input-field" type="number" min="1" value="1">
+                <button onclick="changeAmoutOfIndgredients()">Portionen</button>
             </div>
-            <table class="recipe-table">
-                <tr>
-                    <td>1</td>
-                    <td>Kichererbsen</td>
-
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Tahini</td>
-
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>Zitronensaft</td>
-
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td>Knoblauch</td>
-
-                </tr>
-                <tr>
-                    <td>5</td>
-                    <td>Olivenöl</td>
-
-                </tr>
-                <tr>
-                    <td>6</td>
-                    <td>Salz</td>
-
-                </tr>
-                <tr>
-                    <td>7</td>
-                    <td>Kreuzkümmel</td>
-
-                </tr>
-                <tr>
-                    <td>8</td>
-                    <td>Wasser</td>
-
-                </tr>
-            </table>
+            <ul>
+                <li><span class="amount" data-base="80">80</span>g Kichererbsen</li>
+                <li><span class="amount" data-base="1">1</span>EL Tahini</li>
+                <li><span class="amount" data-base="1">1</span>EL Zitronensaft</li>
+                <li><span class="amount" data-base="1">1</span>ST Kleine knoblauchzehe</li>
+                <li><span class="amount" data-base="1">1</span>EL Olivenöl</li>
+                <li><span class="amount" data-base="0.25">0.25</span>TL Kreuzkümmel</li>
+                <li><span class="amount" data-base="0.5">0.5</span>TL Salz</li>
+                <li><span class="amount" data-base="1">1</span>EL Wasser</li>              
+            </ul>
         </section>
+        <div class="separator">.</div>
 
         <section class="preparation">
             <h2>Zubereitung</h2>
