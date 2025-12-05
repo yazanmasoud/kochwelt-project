@@ -5,30 +5,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spaghetti aglio e olio</title>
-     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="navigation_bar.css">
     <link rel="stylesheet" href="spaghetti.css">
 </head>
 
 <body>
+
+    <!-- header -->
     <header class="header">
-        <a href="#start"><img class="headerLogo-img" src="./assets/img/logo.png" alt=""></a>
+        <a href="index.html"><img class="headerLogo-img" src="./assets/img/logo.png" alt=""></a>
         <nav>
-            <a href="#start">Start</a>
+            <a href="index.html">Start</a>
             <a href="#">Rezept des Tages</a>
             <a href="contact_form.html">Kontakt</a>
             <a href="Impressum.html">Impressum</a>
         </nav>
     </header>
 
-    <!--<img src="./assets/img/spaghetti.jpg" alt="Spaghetti">  -->
-    <div class="clock-badge">
-        <i class="fa-regular fa-clock"></i>
-        <span>20 min</span>
-    </div>
+    <!-- main -->
+    <section class="main-section">
+        <h1>Spaghetti aglio e olio</h1>
+        <img class="main-img" src="./assets/img/spaghetti.jpg" alt="Spaghetti">
+        <div class="main-icons">
+            <div class="clock-badge">
+                <i class="fa-regular fa-clock"></i>
+                <span>20 min</span>
+            </div>
 
+            <div class="clock-badge">
+                <i class="fa-solid fa-brain"></i>
+                <span>20 min</span>
+            </div>
 
+            <div class="clock-badge">
+                <i class="fa-regular fa-calendar-days"></i>
+                <span>20 min</span>
+            </div>
+        </div>
+        <div>
+            <p>Petersilie waschen, trocken schütteln, Blättchen abzupfen und hacken. Chili putzen, längs aufschneiden,
+                entkernen, waschen und in feine Streifen schneiden. Knoblauch schälen und in Scheiben schneiden.</p>
+            <br>
+            <p>
+                Spaghetti in reichlich kochendem Salzwasser ca. 10 Minuten aldente kochen. Abgießen und abtropfen
+                lassen. Öl
+                in
+                einer Pfanne erhitzen und Knoblauch, Petersilie und Chili darin bei mittlerer Hitze 2-3 Minuten dünsten.
+            </p>
+            <br>
+            <p>
+                Spaghetti in die Pfanne geben und unterheben. Mit Salz und Pfeffer abschmecken. Spaghetti auf
+                vorgewärmten
+                Tellern servieren.</p>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <div class="footercontent">
+            <img class="footerLogo" src="./assets/img/logo.png" alt="Kochwelt.img">
+        </div>
+        <div class="footerLinks">
+            <a class="Datenschutz" href="datenschutz.html">Datenschutz</a>
+            <a class="Impressum" href="Impressum.html">Impressum</a>
+            <a class="RezeptdesTagesLink" href="CupcakeRecipes/cupcake-index.html">Rezept des Tages</a>
+            <a class="Kontakt" href="contact_form.html">Kontakt</a>
+        </div>
+        <div class="socialMedia">
+            <a href="http://www.facebook.com" target="_blank" class="link_decoration_social">
+                <div class="social_side_by_side facebookbutton">
+                    <img class="IconSocialMedia Icons" src="./assets/img/icons/facebook.png" alt="">
+                </div>
+            </a>
+
+            <a href="https://www.instagram.com/" target="_blank" class="link_decoration_social">
+                <div class="social_side_by_side">
+                    <img class=" IconSocialMedia Icons" src="./assets/img/icons/instagram.png" alt="Instagram Logo">
+                </div>
+            </a>
+
+            <a href="https://x.com/en/using-x/download-the-x-app" target="_blank" class="link_decoration_social">
+                <div class="social_side_by_side">
+                    <img class=" IconSocialMedia Icons" src="./assets/img/icons/x.png" alt="X Logo">
+                </div>
+            </a>
+        </div>
+
+    </footer>
 </body>
 
 </html>
