@@ -10,12 +10,25 @@ body {
     color: #333;
 }
 
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px 120px 0px 120px;
+header {
+    background-size: cover;
+    box-shadow: 0px 8px 24px rgba(149, 159, 149, 0.2);
 }
+
+.header-inner {
+    max-width: 1440px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: flex-end;
+    display: flex;
+    padding: 10px;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
 
 .headerLogo-img {
     height: 90px;
@@ -33,6 +46,17 @@ p {
 }
 
 /* Hero Section */
+
+.hero-recipe-description {
+    gap: 120px;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-recipe-description a {
+    width: 100px;
+}
+
 .hero-img {
     height: 300px;
 
@@ -40,18 +64,30 @@ p {
 }
 
 .hero-content {
+    max-width: 1440px;
+    margin: 0 auto;
     display: flex;
     align-items: flex-start;
     gap: 50px;
-
     padding: 50px 120px 50px 120px;
 }
 
+.hero button {
+    border: none;
+    padding: 5px;
+    width: 100px;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+    margin: 0;
+}
+
 /* Croissant Cards */
-.new-section {
+.menu-section {
     text-align: center;
     background-color: #f0f0f0;
     padding: 0 120px 32px 120px;
+
 }
 
 .card-row {
@@ -71,6 +107,8 @@ p {
 /* Vergleich Section */
 .compare-section {
     padding: 0 120px 32px 120px;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .compare-content {
@@ -98,6 +136,10 @@ p {
 
 footer {
     background-color: #232323;
+}
+
+.footer-inner {
+    max-width: 1440px;
     display: flex;
     align-items: center;
     justify-content: space-between;

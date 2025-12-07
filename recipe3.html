@@ -15,15 +15,17 @@
 
 </head>
 
-<body>
-  <header>
-       <a href="index.html"><img class="headerLogo-img" src="./assets/img/logo.png" alt="   "></a>
-        <nav>
-            <a href="index.html">Startseite</a>
-            <a href="#zutatenrechner">Zutatenrechner</a>
-            <a href="#zubereitung">Zubereitung</a>
-            <a href="contact_form.html">Kontakt</a>      
-        </nav>
+<body onload="changeAmoutOfIndgredients()">
+    <header>
+        <div class="header-inner">
+            <a href="index.html"><img class="headerLogo-img" src="./assets/img/logo.png" alt=""></a>
+            <nav>
+                <a href="index.html">Start</a>
+                <a href="#">Rezept des Tages</a>
+                <a href="contact_form.html">Kontakt</a>
+                <a href="Impressum.html">Impressum</a>
+            </nav>
+        </div>
     </header>
     <main>
         <h1>The magic Of Humus</h1>
@@ -48,7 +50,7 @@
         <section class="main-recepie" id="zutatenrechner">
             <div class="recepie-head">
                 <span>Zutaten für</span>
-                <input id="input-field" type="number" min="1" value="1">
+                <input id="input-field" type="number" min="1" value="4">
                 <button onclick="changeAmoutOfIndgredients()">Portionen</button>
             </div>
             <ul>
