@@ -66,6 +66,30 @@ a:hover {
     padding: 5px;
 }
 
+.prep-guide {
+    margin-bottom: 24px;
+}
+
+/*table*/
+
+.table {
+    display: flex;
+    justify-content: center;
+    border-spacing: 20px;
+}
+
+tr:nth-child(even) {
+    background-color: #f0f0f0;
+}
+
+td {
+    width: 100vw;
+}
+
+li:nth-child(odd) {
+    background-color: #f0f0f0;
+}
+
 /*footer*/
 
 footer {
