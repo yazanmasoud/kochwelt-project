@@ -12,55 +12,64 @@
 </head>
 
 <body>
-    <header class="header">
-        <a href="#start"><img class="headerLogo-img" src="./assets/img/logo.png" alt=""></a>
-        <nav>
-            <a href="#start">Start</a>
-            <a href="#">Rezept des Tages</a>
-            <a href="contact_form.html">Kontakt</a>
-            <a href="Impressum.html">Impressum</a>
-        </nav>
+
+    <header>
+        <div class="header-inner">
+            <a href="#start"><img class="headerLogo-img" src="./assets/img/logo.png" alt=""></a>
+            <nav>
+                <a href="#start">Start</a>
+                <a href="#">Rezept des Tages</a>
+                <a href="contact_form.html">Kontakt</a>
+                <a href="Impressum.html">Impressum</a>
+            </nav>
+        </div>
     </header>
 
     <!-- Hero Section -->
-
     <section class="hero">
         <div class="hero-content" id="start">
-            <img src="./assets/img/croissant.jpg" class="hero-img" alt="rezept1">
-            <h3>Frische Croissants</h3>
+            <img src="./assets/img/ludovic-avice-yr-sW_x9aHk-unsplash.jpg" class="hero-img" alt="rezept1">
+            <div class="hero-recipe-description">
+                <div>
+                    <h3>Magic of Humus</h3>
+                    <span>Zaubere dir zu Hause im Handumdrehen cremigen Hummus
+                        – super einfach, super lecker. Alles, was du brauchst,
+                        ist 15 Minuten und ein paar frische Zutaten. Klick auf
+                        das Rezept und entdecke das Geheimnis deines neuen
+                        Lieblingssnacks!
+                    </span>
+                </div>
+                <a href="recipe3.html"><button>Rezept öffnen</button></a>
+            </div>
         </div>
     </section>
 
     <!-- Croissant Cards -->
+    <section class="menu-section">
+        <div class="container"> <!-- content begrenzung -->
+            <h2>Lust auf was Neues?</h2>
+            <div class="card-row">
+                <div class="card">
+                    <a href="spaghetti.html"><img src="./assets/img/spaghetti.jpg" class="card-img" alt="rezept2"></a>
+                    <p>Spaghetti algio e olio</p>
+                </div>
 
-    <section class="new-section">
-        <h2>Lust auf was Neues?</h2>
-        <div class="card-row">
-            <div class="card">
-                <a href="spaghetti.html"><img src="./assets/img/spaghetti.jpg" class="card-img" alt="rezept2"></a>
-                <p>Spaghetti algio e olio</p>
-            </div>
-
-            <div class="card">
-                <img src="./assets/img/caesar_salad.png" class="card-img" alt="rezept3">
-                <p>Caesar Salad</p>
-            </div>
-            <div>
-                <a href="recipe3.html"><img src="./assets/img/ludovic-avice-yr-sW_x9aHk-unsplash.jpg" class="card-img" alt="repet"></a>
-                <p>Humus</p>
-            </div>
-
-            <div class="card">
-                <a href="cupcake-index.html"><img src="./assets/img/cupcakes-2250367_1280.jpg" class="card-img"
-                        alt="rezept4"></a>
-                <p>Vanille Cupcake</p>
+                <div class="card">
+                    <img src="./assets/img/caesar_salad.png" class="card-img" alt="rezept3">
+                    <p>Caesar Salad</p>
+                </div>
+                <div class="card">
+                    <a href="cupcake-index.html"><img src="./assets/img/cupcakes-2250367_1280.jpg" class="card-img"
+                            alt="rezept4"></a>
+                    <p>Vanille Cupcake</p>
+                </div>
             </div>
         </div>
     </section>
-
+    
     <!-- Vergleich Section -->
-
     <section class="compare-section">
+     <div class="container">
         <h2>Hauptmahlzeit vs. Dessert – Gesunde Ernährung und süßer Abschluss</h2>
         <div class="compare-content">
             <div class="compare-text">
@@ -84,11 +93,12 @@
                 <img src="./assets/img/hvsd.png" alt="Hauptmahlzeit vs Desser">
             </div>
         </div>
+     </div>
     </section>
 
     <!-- footer Section -->
-
     <footer>
+     <div class="footer-inner">
         <div class="footercontent">
             <img class="footerLogo" src="./assets/img/logo.png" alt="Kochwelt.img">
         </div>
@@ -117,7 +127,7 @@
                 </div>
             </a>
         </div>
-
+     </div>
     </footer>
 
 </body>
