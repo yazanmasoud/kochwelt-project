@@ -84,6 +84,8 @@ p {
 
 /* Croissant Cards */
 .menu-section {
+    display: flex;
+    flex-direction: column;
     text-align: center;
     background-color: #f0f0f0;
     padding: 0 120px 32px 120px;
@@ -123,14 +125,7 @@ p {
     border-radius: 5%;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
 
-    .hero-content,
-    .compare-content {
-        flex-direction: column;
-    }
-}
 
 /* footer section  */
 
@@ -199,4 +194,21 @@ footer {
 .footerLinks {
     display: flex;
     align-items: center;
+}
+/* Resposive */
+@media (max-width: 768px) {
+
+    .hero-content,
+    .compare-content {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 1200px){
+    header nav{
+        display: none;
+    }
+    .hero-recipe-description{
+        gap: 40px;
+    }
 }

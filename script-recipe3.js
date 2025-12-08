@@ -22,5 +22,6 @@ function changeAmoutOfIndgredients() {
         let element = amounts[i];
         let base = element.getAttribute("data-base");
         element.innerHTML = base * inputValue;
+        
     }
 }
