@@ -1,0 +1,143 @@
+/* Hauptlayout */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #fafafa;
+}
+
+/* Rezeptkarte */
+.recipe-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 24px;
+  width: 90%;
+  margin: 20px auto;
+}
+
+.recipe-img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+/* Badges */
+.badges {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.badge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.badge.time { background-color: #43a047; }   /* Grün */
+.badge.easy { background-color: #fbc02d; }   /* Gelb */
+.badge.today { background-color: #1e88e5; }  /* Blau */
+
+/* Zutaten & Zubereitung */
+.card {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 24px;
+}
+
+ul {
+    margin: 30px;
+    width: 30vw;
+}
+
+li {
+    margin: 0px;
+    padding: 8px;
+    border-radius: 8px;
+    width: 75vw;
+    list-style-type: none;
+}
+
+ul li:nth-child(odd) {
+    background-color: #f0f0f0;
+}
+
+button {
+    color: white;
+    background-color: green;
+}
+
+.ingredients ul {
+  list-style: none;
+  padding: 0;
+}
+
+.ingredients li {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+.ingredients li:nth-child(odd) {
+  background: #F0F0F0;
+}
+
+.preparation ol {
+  padding-left: 20px;
+}
+
+.preparation li {
+  margin-bottom: 12px;
+  background: #fff;
+  padding: 10px;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+/* Footer */
+footer {
+  background-color: #232323;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 120px;
+  padding-inline: 120px;
+  color: white;
+}
+
+.footerLogo {
+  filter: brightness() invert();
+  width: 170px;
+}
+
+.footerLinks a {
+  color: #f1f8e9;
+  padding: 0 8px;
+  border-left: 1px solid #403B3B;
+}
+
+.footerLinks a:hover {
+  color: #c8e6c9;
+}
+
+.socialMedia {
+  display: flex;
+  gap: 24px;
+}
+
+.Icons {
+  height: 35px;
+  border-radius: 5px;
+  box-shadow: 1px 1px lightblue;
+}

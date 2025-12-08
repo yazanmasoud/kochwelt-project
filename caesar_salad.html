@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Caesar-Salat Rezept</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="navigation_bar.css">
+  <link rel="stylesheet" href="caesar_salad.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <header>
+    <div class="header-inner">
+      <a href="index.html"><img class="headerLogo-img" src="./assets/img/logo.png" alt=""></a>
+      <nav>
+        <a href="index.html">Start</a>
+        <a href="#">Rezept des Tages</a>
+        <a href="contact_form.html">Kontakt</a>
+        <a href="Impressum.html">Impressum</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Rezeptkarte -->
+    <section class="recipe-card">
+      <h1>Caesar-Salat</h1>
+      <img src="./assets/img/caesar_salad.png" alt="Caesar-Salat" class="recipe-img">
+
+      <!-- Badges -->
+      <div class="badges">
+        <div class="badge time"><i class="fa-regular fa-clock"></i><span>30 min</span></div>
+        <div class="badge easy"><i class="fa-solid fa-brain"></i><span>Einfach</span></div>
+        <div class="badge today"><i class="fa-regular fa-calendar-days"></i><span>04.06.1924</span></div>
+      </div>
+
+      <!-- Zutaten -->
+      <section class="ingredients_card">
+        <h2>Zutaten</h2>
+
+            <div class="ingredients_input">
+                <span>Zutaten für</span>
+                    <input type="number" min="1" value="1" id="input-field"> 
+                    <button>Portionen</button>
+            </div>
+
+        <ul>
+          <li><span>4</span> Romana-Salatherzen</li>
+          <li><span>1</span> Ciabatta (für Croutons)</li>
+          <li><span>80</span> ml Olivenöl</li>
+          <li><span>1</span> Knoblauchzehe</li>
+          <li><span>0.5</span> Glas Sardellenfilets</li>
+          <li><span>200</span> ml Glas Kapern</li>
+          <li><span>20</span> g Mayonnaise</li>
+          <li><span>2</span> TL Senf</li>
+          <li><span>1</span> EL Saft & Abrieb einer Zitrone</li>
+          <li><span>50</span> g geriebener Parmesan</li>
+          <li><span>100</span> g gehobelter Parmesan</li>
+          <li><span>1</span> TL Salz & Cayennepfeffer</li>
+        </ul>
+        
+      </section>
+
+      <!-- Zubereitung -->
+        <div class="preparation card">
+            <h2>Zubereitung</h2>
+                  <h3>Knoblauch pressen, Zitrone abreiben und Saft auspressen. 
+                        Sardellen und Kapern hacken.<br>
+                        Mayonnaise mit Senf, Knoblauch, Kapernwasser, Sardellenöl und Zitronenabrieb verrühren.<br>
+                        Ciabatta würfeln, mit Olivenöl rösten und Croutons beiseitestellen.<br>
+                        Salat waschen, zupfen und mit Dressing vermengen.
+                        Mit Croutons und Parmesan bestreuen und sofort servieren.
+            </h3>
+        </div>
+    </section>
+  </main>
+
+  <!-- footer -->
+  <footer>
+    <div class="footercontent">
+      <img class="footerLogo" src="./assets/img/logo.png" alt="Kochwelt.img">
+    </div>
+    <div class="footerLinks">
+      <a class="Datenschutz" href="datenschutz.html">Datenschutz</a>
+      <a class="Impressum" href="Impressum.html">Impressum</a>
+      <a class="RezeptdesTagesLink" href="CupcakeRecipes/cupcake-index.html">Rezept des Tages</a>
+      <a class="Kontakt" href="contact_form.html">Kontakt</a>
+    </div>
+    <div class="socialMedia">
+      <a href="http://www.facebook.com" target="_blank" class="link_decoration_social">
+        <div class="social_side_by_side facebookbutton">
+          <img class="IconSocialMedia Icons" src="./assets/img/icons/facebook.png" alt="">
+        </div>
+      </a>
+      <a href="https://www.instagram.com/" target="_blank" class="link_decoration_social">
+        <div class="social_side_by_side">
+          <img class="IconSocialMedia Icons" src="./assets/img/icons/instagram.png" alt="Instagram Logo">
+        </div>
+      </a>
+      <a href="https://x.com/en/using-x/download-the-x-app" target="_blank" class="link_decoration_social">
+        <div class="social_side_by_side">
+          <img class="IconSocialMedia Icons" src="./assets/img/icons/x.png" alt="X Logo">
+        </div>
+      </a>
+    </div>
+  </footer>
+</body>
+
+</html>
