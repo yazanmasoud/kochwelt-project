@@ -11,8 +11,11 @@ body {
 }
 
 header {
-    background-size: cover;
     box-shadow: 0px 8px 24px rgba(149, 159, 149, 0.2);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
 }
 
 .header-inner {
@@ -21,7 +24,7 @@ header {
     justify-content: space-between;
     align-items: flex-end;
     display: flex;
-    padding: 10px;
+    padding: 10px 70px;
 }
 
 .container {
@@ -48,19 +51,22 @@ p {
 /* Hero Section */
 
 .hero-recipe-description {
-    gap: 120px;
+    gap: 100px;
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
 }
 
 .hero-recipe-description a {
     width: 100px;
+
+
 }
 
 .hero-img {
-    height: 300px;
-
-    border-radius: 5%;
+    width: 400px;
+    height: auto;
+    border-radius: 5px;
 }
 
 .hero-content {
@@ -82,28 +88,41 @@ p {
     margin: 0;
 }
 
-/* Croissant Cards */
-.menu-section {
+.hero {
+    width: 100%;
+}
+
+.hero-paragraph {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+
+
+}
+
+/* Croissant Cards */
+.menu-section {
     text-align: center;
     background-color: #f0f0f0;
-    padding: 0 120px 32px 120px;
+    background-size: cover;
+    padding: 0px 120px 32px 120px;
 
 }
 
 .card-row {
+
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 20px;
+    gap: 150px;
+
 }
 
 .card-img {
-    height: 150px;
+    height: 200px;
     width: 220px;
     object-fit: cover;
-    border-radius: 5%;
+    border-radius: 5px;
 }
 
 /* Vergleich Section */
@@ -119,12 +138,29 @@ p {
     justify-content: space-between;
 }
 
-.hvsd-image img {
+.compare-section img {
+    border-radius: 5px;
+    width: 300px;
     height: 150px;
-    width: auto;
-    border-radius: 5%;
 }
 
+.compare-section-inner {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.compare-section-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.compare-content-paragraph {
+    width: 70%;
+}
 
 
 /* footer section  */
@@ -144,7 +180,7 @@ footer {
 
 .footerLogo {
     filter: brightness() invert();
-    width: 170px;
+    height: 90px;
 }
 
 
@@ -195,20 +231,91 @@ footer {
     display: flex;
     align-items: center;
 }
-/* Resposive */
-@media (max-width: 768px) {
 
-    .hero-content,
-    .compare-content {
+/* Resposive */
+
+
+@media (max-width: 1290px) {
+    header nav {
+        display: none;
+    }
+
+    .hero-recipe-description {
+        gap: 40px;
+    }
+
+    .card-row {
+        gap: 100px;
+    }
+
+    .menu-section {
+        padding: 0px 70px 32px 70px;
+
+    }
+}
+
+@media (max-width: 1000px) {
+    .card-row {
+        gap: 50px;
+    }
+
+    .card-img {
+        height: 150px;
+        width: 170px;
+    }
+
+    .hero-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-recipe-description {
+        align-items: center;
+    }
+
+    .hero-paragraph {
+        align-items: center;
+    }
+
+    .hero-img {
+        width: 300px;
+    }
+
+    .headerLogo-img {
+        height: 70px;
+    }
+
+    .footerLogo {
+        height: 70px;
+    }
+
+    .compare-content-paragraph {
+        width: 100%;
+    }
+
+    .compare-section-content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .compare-content{
         flex-direction: column;
     }
 }
 
-@media (max-width: 1200px){
-    header nav{
-        display: none;
+@media (max-width: 800px) {
+    .card-row {
+        flex-direction: column;
+
     }
-    .hero-recipe-description{
-        gap: 40px;
+
+    .Icons {
+        height: 25px;
     }
+
+    .footer-inner {
+        padding-inline: 0px;
+    }
+
 }
