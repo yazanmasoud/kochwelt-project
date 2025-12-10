@@ -44,6 +44,8 @@ main img {
 button {
     background-color: green;
     color: white;
+    border: none;
+    padding: 3px;
 }
 
 .recepie-head {
