@@ -1,10 +1,10 @@
 /* main */
 main {
+    max-width: 1440px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 1440px;
-    margin: 0 auto;
 }
 
 main img {
@@ -46,7 +46,9 @@ button {
     color: white;
     border: none;
     padding: 3px;
+    margin-left: -4px;
 }
+
 
 .recepie-head {
     margin-bottom: 30px;
@@ -112,4 +114,21 @@ ul li:nth-child(odd) {
 
 .producer {
     font-size: 30px;
+}
+
+@media(max-width: 500px){
+    .badges{
+        flex-direction: column;
+    }
+    main h1{
+        font-size: 24px;
+    }
+    .producer{
+        font-size: 24px;
+    }
+}
+@media(max-width: 350px){
+    input{
+    width: 60px;
+}
 }

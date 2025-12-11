@@ -19,9 +19,14 @@
 <body onload="changeAmoutOfIndgredients()">
     <header>
         <div class="header-inner">
-            <a href="index.html"><img class="headerLogo-img" src="./assets/img/logo.png" alt=""></a>
+            <a href="#start"><img class="headerLogo-img" src="./assets/img/logo.png" alt=""></a>
+            <div class="burger" onclick="document.body.classList.toggle('nav-open')">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
             <nav>
-                <a href="index.html">Start</a>
+                <a href="#start">Start</a>
                 <a href="#">Rezept des Tages</a>
                 <a href="contact_form.html">Kontakt</a>
                 <a href="Impressum.html">Impressum</a>
@@ -62,7 +67,7 @@
                 <li><span class="amount" data-base="1">1</span>EL Olivenöl</li>
                 <li><span class="amount" data-base="0.25">0.25</span>TL Kreuzkümmel</li>
                 <li><span class="amount" data-base="0.5">0.5</span>TL Salz</li>
-                <li><span class="amount" data-base="1">1</span>EL Wasser</li>              
+                <li><span class="amount" data-base="1">1</span>EL Wasser</li>
             </ul>
         </section>
         <div class="separator">.</div>
@@ -88,8 +93,8 @@
             </span>
             <h3>Rezept Erstellt von</h3>
             <div class="profil-container">
-            <img class="profil-img" src="./assets/img/profil-picture.jpg" alt="profil picture">
-            <span class="producer">Yazan</span>
+                <img class="profil-img" src="./assets/img/profil-picture.jpg" alt="profil picture">
+                <span class="producer">Yazan</span>
             </div>
         </section>
     </main>
@@ -97,7 +102,7 @@
 
 
 
-     <footer>
+    <footer>
         <div class="footer-inner">
             <div class="footercontent">
                 <img class="footerLogo" src="./assets/img/logo.png" alt="Kochwelt.img">
