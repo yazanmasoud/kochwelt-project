@@ -40,12 +40,30 @@ header {
 h1,
 h2 {
     text-align: center;
-    padding: 24px 0 24px 0;
+    padding: 24px 0;
     margin: 0;
 }
 
 p {
     margin: 0;
+}
+
+/* burger menü */
+.burger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+    padding: 18px;
+
+}
+
+.burger span {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    display: block;
+    border-radius: 3px;
 }
 
 /* Hero Section */
@@ -236,9 +254,7 @@ footer {
 
 
 @media (max-width: 1290px) {
-    header nav {
-        display: none;
-    }
+
 
     .hero-recipe-description {
         gap: 40px;
@@ -252,7 +268,29 @@ footer {
         padding: 0px 70px 32px 70px;
 
     }
+
+    .burger {
+        display: flex;
+    }
+
+    .header-inner nav {
+        display: none !important;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        background: white;
+        padding: 20px;
+    }
+
+    body.nav-open .header-inner nav {
+        display: flex !important;
+    }
+
 }
+
+
+
 
 @media (max-width: 1000px) {
     .card-row {
@@ -285,12 +323,20 @@ footer {
         height: 70px;
     }
 
+    .header-inner {
+        padding-left:0px;
+        padding-right: 0px;
+    }
+
     .footerLogo {
         height: 70px;
     }
 
     .compare-content-paragraph {
-        width: 100%;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        padding: 32px 50px;
     }
 
     .compare-section-content {
@@ -299,10 +345,13 @@ footer {
         align-items: center;
 
     }
-    .compare-content{
+
+    .compare-content {
         flex-direction: column;
     }
+
 }
+
 
 @media (max-width: 800px) {
     .card-row {
@@ -318,4 +367,26 @@ footer {
         padding-inline: 0px;
     }
 
+    h2 {
+        font-size: 20px;
+    }
+}
+
+@media(max-width: 550px) {
+    .headerLogo-img {
+        height: 50px;
+    }
+
+    .footerLogo {
+        height: 50px;
+    }
+
+    .Icons {
+        height: 20px;
+    }
+
+    .socialMedia {
+        flex-direction: column;
+
+    }
 }
