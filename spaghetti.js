@@ -1,8 +1,11 @@
+
 function ingredientcalc() {
-    let portionnum = document.getElementById("input").value;
+
+    let portionnum = document.getElementById("inputnum").value;
     let ingredients = document.querySelectorAll(".soloIngredient");
-    for (let index = 0; index < array.length; index++) {
-        const element = array[index];
+
+    for (let index = 0; index < ingredients.length; index++) {
+        let specificingredient = ingredients[index];
         
     }
 }
