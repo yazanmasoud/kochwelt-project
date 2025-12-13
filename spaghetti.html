@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="navigation_bar.css">
     <link rel="stylesheet" href="spaghetti.css">
-    <link rel="stylesheet" href="spaghetti.js">
+    <script src="spaghetti.js"></script>
 </head>
 
 <body>
@@ -48,15 +48,15 @@
 
         <h2>Zutaten</h2>
         <input type="number" id="inputnum">
-        <button class="searchbutton" onclick="ingredientcalc()">Portionen</button>
+        <button onclick="ingredientcalc()">Portionen</button>
         <ul>
-            <li class="soloIngredient"><span>0.5</span>Bund glatte Petersilie </li>
-            <li class="soloIngredient"><span>2</span>rote Chilischoten</li>
-            <li class="soloIngredient"><span>6</span>Knoblauchzehen</li>
-            <li class="soloIngredient"><span>400</span>g Spaghetti</li>
-            <li class="soloIngredient"><span>1</span>Prise Salz</li>
-            <li class="soloIngredient"><span>1</span>Prise Pfeffer</li>
-            <li class="soloIngredient"><span>6</span>EL Olivenöl</li>
+            <li><span class="soloIngredient" data-base="0.5">0.5</span> Bund(e) glatte Petersilie </li>
+            <li><span class="soloIngredient" data-base="2">2</span> rote Chilischoten</li>
+            <li><span class="soloIngredient" data-base="6">6</span> Knoblauchzehen</li>
+            <li><span class="soloIngredient" data-base="400">400</span> g Spaghetti</li>
+            <li><span class="soloIngredient" data-base="1">1</span> Prise(n) Salz</li>
+            <li><span class="soloIngredient" data-base="1">1</span> Prise(n) Pfeffer</li>
+            <li><span class="soloIngredient" data-base="6">6</span> EL Olivenöl</li>
         </ul>
 
         <div class="prep-guide">

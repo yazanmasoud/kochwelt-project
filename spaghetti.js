@@ -1,11 +1,10 @@
-
 function ingredientcalc() {
+       let inputValue = document.getElementById("inputnum").value;
+       let amounts = document.querySelectorAll(".soloIngredient");
 
-    let portionnum = document.getElementById("inputnum").value;
-    let ingredients = document.querySelectorAll(".soloIngredient");
-
-    for (let index = 0; index < ingredients.length; index++) {
-        let specificingredient = ingredients[index];
-        
+    for (let i = 0; i < amounts.length; i++) {
+        let element = amounts[i];
+        let base = element.getAttribute("data-base");
+        element.innerHTML = base * inputValue;
     }
 }
