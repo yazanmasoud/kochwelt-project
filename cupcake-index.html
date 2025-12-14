@@ -1,29 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VANILLA CUPCAKE</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="navigation_bar.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700&display=swap">
+    <link rel="icon" type="image/png" href="./assets/img/logo_small.png">
     <link rel="stylesheet" href="cupcake-style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700&amp;display=swap">
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="scrips-cupcake.js"></script> 
 </head>
-    <link rel="stylesheet" href="navigation_bar.css">
-    <link rel="stylesheet" href="footerstyle.css">
-<body>
-  <header>
-       <a href="#start"><img class="headerLogo-img" src="./assets/img/logo.png" alt=""></a>
-        <nav>
-            <a href="#start">Start</a>
-            <a href="#">Rezept des Tages</a>
-            <a href="contact_form.html">Kontakt</a>
-            <a href="Impressum.html">Impressum</a>
-        </nav>
+
+<body onabort="AmoutOfIndgredients()">
+    <header>
+        <div class="header-inner">
+            <a href="#start"><img class="headerLogo-img" src="./assets/img/logo.png" alt=""></a>
+            <div class="burger" onclick="document.body.classList.toggle('nav-open')">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav>
+                <a href="#start">Start</a>
+                <a href="#">Rezept des Tages</a>
+                <a href="contact_form.html">Kontakt</a>
+                <a href="Impressum.html">Impressum</a>
+            </nav>
+        </div>
     </header>
 
  <main>
@@ -51,74 +55,35 @@
      </section> 
     </main>
 
-<div class="separator">.</div>
+     <section class="cupcake-recepie" >
+            <div class="recepieCupcake-head" >
+                <div class="portionen-input">
+                    <label>Zutaten für </label>
+                    <input id="cupcakeinput-field" type="number" min="1" value="12" >
+                    <button onclick="AmoutOfIndgredients()">Portionen</button>
+                </div>
+            </div>
+      </section>
+     <div>
+                <ul >
+                  <h3>Für den Teig</h3>
+                    <li><span class="Portionen" data-bases="10.33">120</span>g weiche Butter</li>
+                    <li><span class="Portionen" data-bases="10.33">120</span>g Zucker</li>
+                    <li><span class="Portionen" data-bases="0.08">1</span> Vanilleschote</li>
+                    <li><span class="Portionen" data-bases="0.16">2</span> Eier (Gr. M)</li>
+                    <li><span class="Portionen" data-bases="12.5">150</span> Weizenmehl (Type 405)</li>
+                    <li><span class="Portionen" data-bases="0.16">2</span> Baclpilver</li>
+                    <li><span class="Portionen" data-bases="0.41">5</span> Buttermilch</li>
+                
+           
 
-<section class="recepie-head">
-            <span>Zutaten für<span>
-            <input type="number">
-            <button>Portionen</button>
-        </section>
-         <div class="main-recipe-ingredients-tables">
-            <h2>FÜR DEN TEIG</h2>
-            <table>
-            <tbody>
-              <tr>
-                <td>g</td>
-                <td>weiche Butter</td>
-              </tr>
-              <tr>
-                <td>g</td>
-                <td>Zucker</td>
-              </tr>
-              <tr>
-                <td>Stk.</td>
-                <td>Vanilleschote (Mark)</td>
-              </tr>
-              <tr>
-                <td>Stk.</td>
-                <td>Eier (Gr. M)</td>
-              </tr>
-              <tr>
-                <td>g</td>
-                <td>Weizenmehl (Type 405)</td>
-              </tr>
-              <tr>
-                <td>TL</td>
-                <td>Backpulver</td>
-              </tr>
-              <tr>
-                <td>TL</td>
-                <td>Buttermilch</td>
-              </tr>
-            </tbody>
-          </table>
-
-          <h2>FÜR DIE BUTTERCREME</h2>
-          <table>
-            <tbody>
-              <tr>
-                <td>g</td>
-                <td>weiche Butter</td>
-              </tr>
-              <tr>
-                <td>g</td>
-                <td>Puderzucker</td>
-              </tr>
-              <tr>
-                <td>TL</td>
-                <td>Vanilleextrakt</td>
-              </tr>
-              <tr>
-                <td>EL</td>
-                <td>Milch</td>
-              </tr          
-              <tr>
-                <td></td>
-                <td>Zuckerperlen nach Belieben</td>
-              </tr        
-            </tbody>
-          </table>
-        </div>
+                    <li><span class="Portionen" data-bases="12.5">150</span>g weiche Butter</li>
+                    <li><span class="Portionen" data-bases="16.67">200</span>g Puderzucker</li>
+                    <li><span class="Portionen" data-bases="0.08">1</span> TL Vanilleextrakt</li>
+                    <li><span class="Portionen" data-bases="0.16">2</span> EL Milch</li>
+                    <li><span class="Portionen" data-bases=></span>Zuckerperlen zum Dekorieren</li>
+                </div>
+        
      <div class="separator">.</div>
 <section class="preparation-section">
 
@@ -147,7 +112,40 @@
     <span class="Preparation-step-text">Für die Buttercreme die Butter hell aufschlagen. Puderzucker gesiebt nach und nach dazugeben, Vanilleextrakt und Milch dazugeben und weiterschlagen. Buttercreme in einen Spritzbeutel mit Sterntülle füllen und auf die abgekühlten Cupcakes spritzen. Nach Belieben mit Zuckerperlen dekorieren und servieren.</span>
   </div>
 </section>
+ <h3>Rezept Erstellt von</h3>
+            <div class="profil-container">
+            <img class="profil-img" src="./assets/img/profile.png" alt="profil picture">
+            <span class="producer">Christina</span>
+            </div>
 </div>
+ <footer>
+        <div class="footer-inner">
+            <div class="footercontent">
+                <img class="footerLogo" src="./assets/img/logo.png" alt="Kochwelt.img">
+            </div>
+
+            <div class="socialMedia">
+                <a href="http://www.facebook.com" target="_blank" class="link_decoration_social">
+                    <div class="social_side_by_side facebookbutton">
+                        <img class="IconSocialMedia Icons" src="./assets/img/icons/facebook.png" alt="">
+                    </div>
+                </a>
+
+                <a href="https://www.instagram.com/" target="_blank" class="link_decoration_social">
+                    <div class="social_side_by_side">
+                        <img class=" IconSocialMedia Icons" src="./assets/img/icons/instagram.png" alt="Instagram Logo">
+                    </div>
+                </a>
+
+                <a href="https://x.com/en/using-x/download-the-x-app" target="_blank" class="link_decoration_social">
+                    <div class="social_side_by_side">
+                        <img class=" IconSocialMedia Icons" src="./assets/img/icons/x.png" alt="X Logo">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </footer>
+
 </body>
 
 
