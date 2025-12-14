@@ -4,11 +4,11 @@ body {
     font-size: 16px;
     background-color: #fff;
     color: #333;
+    max-width: 1920px;
 }
 
 h1,
 h2 {
-    text-align: center;
     padding: 24px 0 24px 0;
     margin: 0;
 }
@@ -54,45 +54,54 @@ a:hover {
 }
 
 .main-img {
-    width: 80vw;
+    width: 1250px;
     height: 250px;
     object-fit: cover;
+    border-radius: 10px;
 }
 
 .main-icons {
     display: flex;
-    justify-content: row;
+    justify-content: center;
     gap: 10px;
     padding: 5px;
 }
 
+#inputnum {
+    padding: 8px 0 8px 1px;
+    margin: 0;
+    border-radius: 8px;
+    border: 2px solid #f0f0f0;
+}
+
 .button {
     background-color: rgb(9, 156, 41);
-    color: white;
+    color: #f0f0f0;
+    margin: 0;
+    padding: 8px 32px 8px 32px;
+    border: 1px solid #f0f0f0;
 }
 
-.prep-guide {
-    margin-bottom: 24px;
+li {
+    list-style-type: none;
+    padding: 12px 12px 12px 12px;
+    border-radius: 10px;
 }
 
-/*table*/
-
-.table {
-    display: flex;
-    justify-content: center;
-    border-spacing: 20px;
+ol {
+    padding: 0;
 }
 
-tr:nth-child(even) {
-    background-color: #f0f0f0;
-}
-
-td {
-    width: 100vw;
+ul {
+    padding: 0;
 }
 
 li:nth-child(odd) {
     background-color: #f0f0f0;
+}
+
+.prep-guide {
+    margin-bottom: 24px;
 }
 
 /*footer*/

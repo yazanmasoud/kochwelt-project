@@ -12,16 +12,16 @@
     <script src="spaghetti.js"></script>
 </head>
 
-<body>
+<body onload="ingredientcalc()">
 
     <!-- header -->
     <header class="header">
         <a href="index.html"><img class="headerLogo-img" src="./assets/img/logo.png" alt=""></a>
         <nav>
             <a href="index.html">Start</a>
-            <a href="#">Rezept des Tages</a>
+            <a href="recipe3.html">Rezept des Tages</a>
             <a href="contact_form.html">Kontakt</a>
-            <a href="Impressum.html">Impressum</a>
+            <a href="Impressum.html" target="_blank">Impressum</a>
         </nav>
     </header>
 
@@ -46,9 +46,8 @@
             </div>
         </div>
 
-        <h2>Zutaten</h2>
-        <input type="number" id="inputnum">
-        <button onclick="ingredientcalc()">Portionen</button>
+        Zutaten für <input type="number" id="inputnum" min="1" value="4">
+        <button onclick="ingredientcalc()" class="button">Portionen</button>
         <ul>
             <li><span class="soloIngredient" data-base="0.5">0.5</span> Bund(e) glatte Petersilie </li>
             <li><span class="soloIngredient" data-base="2">2</span> rote Chilischoten</li>
@@ -61,25 +60,17 @@
 
         <div class="prep-guide">
             <h2>Zubereitung</h2>
-            <ol>
-                <li>Petersilie waschen, trocken schütteln, Blättchen abzupfen und hacken. Chili putzen, längs
-                    aufschneiden,
-                    entkernen, waschen und in feine Streifen schneiden. Knoblauch schälen und in Scheiben schneiden.
-                </li>
-                <br>
-                <li>
-                    Spaghetti in reichlich kochendem Salzwasser ca. 10 Minuten aldente kochen. Abgießen und abtropfen
-                    lassen. Öl
-                    in
-                    einer Pfanne erhitzen und Knoblauch, Petersilie und Chili darin bei mittlerer Hitze 2-3 Minuten
-                    dünsten.
-                </li>
-                <br>
-                <li>
-                    Spaghetti in die Pfanne geben und unterheben. Mit Salz und Pfeffer abschmecken. Spaghetti auf
-                    vorgewärmten
-                    Tellern servieren.</li>
-            </ol>
+            <p>Petersilie waschen, trocken schütteln, Blättchen abzupfen und hacken. Chili putzen, längs
+                aufschneiden, entkernen, waschen und in feine Streifen schneiden. Knoblauch schälen und in Scheiben
+                schneiden.
+
+                Spaghetti in reichlich kochendem Salzwasser ca. 10 Minuten aldente kochen. Abgießen und abtropfen
+                lassen. Öl in einer Pfanne erhitzen und Knoblauch, Petersilie und Chili darin bei mittlerer Hitze 2-3
+                Minuten dünsten.
+
+                Spaghetti in die Pfanne geben und unterheben. Mit Salz und Pfeffer abschmecken. Spaghetti auf
+                vorgewärmten
+                Tellern servieren.</p>
         </div>
     </section>
 
