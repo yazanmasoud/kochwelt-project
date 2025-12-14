@@ -9,7 +9,7 @@ body {
 
 h1,
 h2 {
-    padding: 24px 0 24px 0;
+    padding: 24px 0 12px 0;
     margin: 0;
 }
 
@@ -31,8 +31,8 @@ a:hover {
 
 .badge {
     background-color: #f0f0f0;
-    width: 70px;
-    padding: 3px;
+    width: auto;
+    padding: 5px;
     border-radius: 5px;
 }
 
@@ -65,8 +65,8 @@ a:hover {
 
 .main-icons {
     display: flex;
-    justify-content: center;
-    gap: 10px;
+    margin: 24px 0 48px 0;
+    gap: 12px;
     padding: 5px;
 }
 
@@ -101,6 +101,13 @@ ul {
 
 li:nth-child(odd) {
     background-color: #f0f0f0;
+}
+
+.prep-icons {
+    display: flex;
+    margin: 0 0 24px 0;
+    gap: 12px;
+    padding: 5px;
 }
 
 .prep-guide {
