@@ -21,10 +21,12 @@ a {
     text-decoration: none;
     color: black;
     cursor: pointer;
+    padding-bottom: 12px;
 }
 
 a:hover {
     color: rgb(2, 138, 2);
+    text-decoration: underline;
 }
 
 .badge {
@@ -39,8 +41,9 @@ a:hover {
 .header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
     padding: 0px 120px 0px 120px;
+    box-shadow: 0px 8px 24px rgba(149, 159, 149, 0.2);
 }
 
 .headerLogo-img {
@@ -54,7 +57,7 @@ a:hover {
 }
 
 .main-img {
-    width: 1250px;
+    width: 100%;
     height: 250px;
     object-fit: cover;
     border-radius: 10px;
