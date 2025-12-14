@@ -36,20 +36,6 @@ a:hover {
     border-radius: 5px;
 }
 
-/*header*/
-
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    padding: 0px 120px 0px 120px;
-    box-shadow: 0px 8px 24px rgba(149, 159, 149, 0.2);
-}
-
-.headerLogo-img {
-    height: 90px;
-}
-
 /* main */
 
 .main-section {
@@ -112,69 +98,4 @@ li:nth-child(odd) {
 
 .prep-guide {
     margin-bottom: 24px;
-}
-
-/*footer*/
-
-footer {
-    background-color: #232323;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    min-height: 120px;
-    padding-inline: 120px;
-}
-
-.footerLogo {
-    filter: brightness() invert();
-    width: 170px;
-}
-
-
-.socialMedia {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 24px;
-}
-
-.Icons {
-    height: 35px;
-    fill: white;
-    vertical-align: middle;
-    border-radius: 5px 5px 5px 5px;
-    box-shadow: 1px 1px lightblue;
-
-}
-
-.social_side_by_side {
-    display: flex;
-    align-items: center;
-}
-
-.find_us {
-    font-size: 10px;
-}
-
-.footercontent {
-    display: flex;
-    align-items: center;
-}
-
-.Kontakt,
-.RezeptdesTagesLink,
-.Impressum,
-.Datenschutz {
-    display: flex;
-    align-items: center;
-    padding-left: 5px;
-    padding-right: 5px;
-    color: white;
-    border-left: 1px solid #403B3B;
-    text-decoration: none;
-}
-
-.footerLinks {
-    display: flex;
-    align-items: center;
 }
