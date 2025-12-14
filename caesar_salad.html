@@ -10,9 +10,10 @@
   <link rel="stylesheet" href="caesar_salad.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700&display=swap">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="scrips_caesar_salad.js"></script>
 </head>
 
-<body>
+<body onload="changeAmoutOfIndgredients()">
   <header>
     <div class="header-inner">
       <a href="index.html"><img class="headerLogo-img" src="./assets/img/logo.png" alt=""></a>
@@ -44,24 +45,22 @@
 
             <div class="ingredients_input">
                 <span>Zutaten für</span>
-                    <input type="number" min="1" value="1" id="input-field"> 
-                    <button>Portionen</button>
+                    <input type="number" id="input-field" min="1" value="4">
+                    <button onclick="changeAmoutOfIndgredients()">Portionen</button>
             </div>
+<ul>
+  <li><span class="amount" data-base="1">1</span> Romana-Salatherz</li>
+  <li><span class="amount" data-base="20">20</span> ml Olivenöl</li>
+  <li><span class="amount" data-base="0.12">0.12</span> Glas Sardellenfilets</li>
+  <li><span class="amount" data-base="50">50</span> ml Kapern</li>
+  <li><span class="amount" data-base="5">5</span> g Mayonnaise</li>
+  <li><span class="amount" data-base="0.5">0.5</span> TL Senf</li>
+  <li><span class="amount" data-base="0.25">0.25</span> EL Zitronensaft & Abrieb</li>
+  <li><span class="amount" data-base="12.5">12.5</span> g geriebener Parmesan</li>
+  <li><span class="amount" data-base="25">25</span> g gehobelter Parmesan</li>
+  <li><span class="amount" data-base="0.25">0.25</span> TL Salz & Cayennepfeffer</li>
+</ul>
 
-        <ul>
-          <li><span>4</span> Romana-Salatherzen</li>
-          <li><span>1</span> Ciabatta (für Croutons)</li>
-          <li><span>80</span> ml Olivenöl</li>
-          <li><span>1</span> Knoblauchzehe</li>
-          <li><span>0.5</span> Glas Sardellenfilets</li>
-          <li><span>200</span> ml Glas Kapern</li>
-          <li><span>20</span> g Mayonnaise</li>
-          <li><span>2</span> TL Senf</li>
-          <li><span>1</span> EL Saft & Abrieb einer Zitrone</li>
-          <li><span>50</span> g geriebener Parmesan</li>
-          <li><span>100</span> g gehobelter Parmesan</li>
-          <li><span>1</span> TL Salz & Cayennepfeffer</li>
-        </ul>
         
       </section>
 

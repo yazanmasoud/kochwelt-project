@@ -1,11 +1,11 @@
-document.getElementById("input-field")
+function changeAmoutOfIndgredients() {
+       let inputValue = document.getElementById("input-field").value;
+       let amounts = document.querySelectorAll(".amount");
 
-
-function ingredientCalculator() {
-    
-}
-
-for (let index = 0; index < array.length; index++) {
-    const element = array[index];
-    
+    for (let i = 0; i < amounts.length; i++) {
+        let element = amounts[i];
+        let base = element.getAttribute("data-base");
+        element.innerHTML = base * inputValue;
+        
+    }
 }
