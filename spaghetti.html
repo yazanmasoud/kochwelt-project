@@ -54,9 +54,12 @@
                 <span>30.11.2025</span>
             </div>
         </div>
-
-        Zutaten für <input type="number" id="inputnum" min="1" value="4">
-        <button onclick="ingredientcalc()" class="button">Portionen</button>
+        <div class="calc-section">
+            Zutaten für
+            <div class="input-button"><input type="number" id="inputnum" min="1" value="4">
+                <button onclick="ingredientcalc()" class="button">Portionen</button>
+            </div>
+        </div>
         <ul>
             <li><span class="soloIngredient" data-base="0.5">0.5</span> Bund(e) glatte Petersilie </li>
             <li><span class="soloIngredient" data-base="2">2</span> rote Chilischoten</li>
@@ -71,14 +74,14 @@
 
             <h2>Zubereitung</h2>
             <div class="prep-icons">
-                <div class="badge">
+                <div class="prep-badge">
                     <i class="fa-regular fa-clock"></i>
-                    <span>25 min</span>
+                    <span>Vorbereitung: 12 min</span>
                 </div>
 
-                <div class="badge">
+                <div class="prep-badge">
                     <i class="fa-regular fa-clock"></i>
-                    <span>25 min</span>
+                    <span>Kochen: 13 min</span>
                 </div>
             </div>
 
