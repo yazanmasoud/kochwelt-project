@@ -193,6 +193,25 @@ p {
     gap: 10px;  
     padding-bottom: 20px;
 }
+.portionen-input {
+    padding: 20px 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+    align-items: center;
+}
+
+h3 {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.producer {
+    font-size: 15px;
+}
 }
 @media (max-width: 368px) {
 
@@ -212,5 +231,14 @@ h1 {
     gap: 10px; 
     align-items: center;
 }
-
+h3 {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+}
+.producer {
+    font-size: 15px;
+}
 }
