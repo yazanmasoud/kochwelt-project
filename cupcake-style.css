@@ -87,7 +87,6 @@ button {
 }
 .separator {
     background-color: #c4c1c1;
-    width: 100vw;
     height: 1px;
     margin-bottom: 50px;
     margin: 50px;
@@ -149,7 +148,7 @@ h3 {
 }
     
 .profile-section {
-    margin: 20px 70px;
+    margin: 50px 70px;
 }
 
 .producer {
@@ -186,6 +185,60 @@ p {
     margin: 20px 70px;
 }
 
+/* media section*/
 
+@media (max-width: 500px) {
+.Icons-Group {
+    flex-direction: column;
+    gap: 10px;  
+    padding-bottom: 20px;
+}
+.portionen-input {
+    padding: 20px 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+    align-items: center;
+}
 
+h3 {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+}
 
+.producer {
+    font-size: 15px;
+}
+}
+@media (max-width: 368px) {
+
+h1 {
+    font-size: 23px;
+}
+
+.text-description {
+    font-size: 15px;
+    padding: 20px 20px;
+}
+
+.portionen-input {
+    padding: 20px 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+    align-items: center;
+}
+h3 {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+}
+.producer {
+    font-size: 15px;
+}
+}
