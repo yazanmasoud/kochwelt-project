@@ -54,6 +54,14 @@ button {
     gap: 20px;
   
 }
+.preparation-steps {
+    padding: 20px 70px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
 .Icons-Group {
     display: flex;
     align-items: center;
