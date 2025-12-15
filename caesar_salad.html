@@ -16,7 +16,7 @@
 <body onload="changeAmoutOfIndgredients()">
     <header>
         <div class="header-inner">
-            <a href="index.html"><img class="headerLogo-img" src="./assets/img/logo.png" alt=""></a>
+            <a href="index"><img class="headerLogo-img" src="./assets/img/logo.png" alt=""></a>
             <div class="burger" onclick="document.body.classList.toggle('nav-open')">
                 <span></span>
                 <span></span>
@@ -50,7 +50,7 @@
 
             <div class="ingredients_input">
                 <span>Zutaten für</span>
-                    <input type="number" id="input-field" min="1" value="4">
+                    <input type="number" id="input-field" min="1" value="4" class="input">
                     <button onclick="changeAmoutOfIndgredients()">Portionen</button>
             </div>
 <ul>
@@ -71,18 +71,35 @@
 
       <!-- Zubereitung -->
         <div class="preparation card">
-            <h2>Zubereitung</h2>
-                  <h3>Knoblauch pressen, Zitrone abreiben und Saft auspressen. 
-                        Sardellen und Kapern hacken.<br>
-                        Mayonnaise mit Senf, Knoblauch, Kapernwasser, Sardellenöl und Zitronenabrieb verrühren.<br>
-                        Ciabatta würfeln, mit Olivenöl rösten und Croutons beiseitestellen.<br>
-                        Salat waschen, zupfen und mit Dressing vermengen.
-                        Mit Croutons und Parmesan bestreuen und sofort servieren.
-            </h3>
+ 
         </div>
+
+                <section class="preparation" id="zubereitung">
+            <h2 class="preparation-title-margin">Zubereitung</h2>
+            <div class="preparation-badge">
+                <i class="fa-regular fa-clock"></i>
+                <span>30 min</span>
+            </div>
+            <span><br>
+                Knoblauch pressen, Zitrone abreiben und Saft auspressen. 
+                Sardellen und Kapern hacken.<br>
+                Mayonnaise mit Senf, Knoblauch, Kapernwasser, Sardellenöl und Zitronenabrieb verrühren.<br>
+                Ciabatta würfeln, mit Olivenöl rösten und Croutons beiseitestellen.<br>
+                Salat waschen, zupfen und mit Dressing vermengen.
+                Mit Croutons und Parmesan bestreuen und sofort servieren.
+            </span>
+            <h3>Rezept Erstellt von</h3>
+            <div class="profil-container">
+                  <img class="profil-img" src="./assets/img/231257.png" alt="profil picture">
+              <span class="producer">Zahir</span>
+            </div>
+        
+
     </section>
   </main>
 
+
+  
     <!-- footer Section -->
     <footer>
         <div class="footer-inner">
