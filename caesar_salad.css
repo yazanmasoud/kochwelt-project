@@ -3,10 +3,12 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 1440px;
-  margin: 0 auto;
+  width: 100%;             
+  max-width: 1440px;       
+  margin: 0 auto;          
   padding: 20px;
   background: #fafafa;
+  box-sizing: border-box;
 }
 
 /* Rezeptkarte */
@@ -30,7 +32,7 @@ main {
 /* Badges */
 .badges {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   gap: 16px;
   margin-bottom: 24px;
 }
@@ -57,9 +59,16 @@ main {
   margin-bottom: 24px;
 }
 
+.input {
+  color: #43a047;
+  /* font-weight: bold; */
+
+}
+
 ul {
-    margin: 30px;
-    width: 30vw;
+  margin: 30px auto;
+  max-width: 600px;
+  width: 100%;
 }
 
 li {
@@ -68,6 +77,7 @@ li {
     border-radius: 8px;
     width: 75vw;
     list-style-type: none;
+    width: 100%;
 }
 
 ul li:nth-child(odd) {
@@ -77,6 +87,11 @@ ul li:nth-child(odd) {
 button {
     color: white;
     background-color: green;
+    border: none;
+    border-radius: 4px;
+    padding: 3px;
+    margin: -4px;
+    cursor: pointer;
 }
 
 .ingredients ul {
@@ -93,6 +108,11 @@ button {
   background: #F0F0F0;
 }
 
+.ingredients  h2 {
+    padding: 24px 0;
+    margin: 0;
+}
+
 .preparation ol {
   padding-left: 20px;
 }
@@ -103,6 +123,56 @@ button {
   padding: 10px;
   border-radius: 6px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.preparation-badge {
+  background-color: #43a047;
+  border-radius: 8px;
+  display: inline-flex;
+  padding: 4px;
+  margin: 8px;
+  
+}
+
+.times {
+  width: 10px;
+  height: 10px;
+  padding: 10px;
+}
+
+.profil-container {
+  display: flex;              /* Elemente nebeneinander */
+  align-items: center;        /* vertikal mittig ausrichten */
+  gap: 16px;                  /* Abstand zwischen Bild und Name */
+}
+.profil-img {
+  width: 100px;
+  height: 150px;
+  border-radius: 8px;         /* optional: abgerundete Ecken */
+}
+
+.profil-container {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.producer {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.recipe-card,
+ul,
+li {
+  width: 100%;
+  max-width: 600px; /* oder was du für Desktop willst */
+  box-sizing: border-box;
+}
+
+.badges {
+  flex-wrap: wrap;
+  gap: 8px;
 }
 
 /* Footer */
@@ -140,4 +210,66 @@ footer {
   height: 35px;
   border-radius: 5px;
   box-shadow: 1px 1px lightblue;
+}
+
+
+/* Media anpassung 320px */
+
+@media (max-width: 320px) {
+  .recipe-img {
+    height: 200px;
+  }
+
+  .profil-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .producer {
+    font-size: 20px;
+    padding-left: 0;
+  }
+
+  .input,
+  button {
+    width: 100%;
+    margin-top: 8px;
+  }
+
+  ul {
+    margin: 16px auto;
+    padding: 0 8px;
+  }
+
+  li {
+    font-size: 14px;
+    padding: 6px;
+  }
+
+  footer {
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .socialMedia {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+/* Media Footer */
+
+@media (max-width: 320px) {
+  .badge {
+    font-size: 12px;
+    padding: 4px 8px;
+  }
+
+  .fa-clock,
+  .fa-brain,
+  .fa-calendar-days {
+    font-size: 14px;
+  }
 }
