@@ -18,15 +18,13 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
+    padding: 18px 0;
 }
 
 .header-inner {
-    max-width: 1440px;
-    margin: 0 auto;
     justify-content: space-between;
     align-items: flex-end;
     display: flex;
-    padding: 10px 70px;
 }
 
 .container {
@@ -93,12 +91,10 @@ p {
 }
 
 .hero-content {
-    max-width: 1440px;
-    margin: 0 auto;
     display: flex;
     align-items: flex-start;
     gap: 50px;
-    padding: 50px 120px 50px 120px;
+    padding: 50px 120px;
 }
 
 .hero button {
@@ -128,8 +124,9 @@ p {
     text-align: center;
     background-color: #f0f0f0;
     background-size: cover;
-    padding: 0px 120px 32px 120px;
-
+}
+.menu-section .container {
+    padding: 0 120px 32px 120px;
 }
 
 .card-row {
@@ -150,9 +147,7 @@ p {
 
 /* Vergleich Section */
 .compare-section {
-    padding: 0 120px 32px 120px;
-    max-width: 1440px;
-    margin: 0 auto;
+    padding: 0 0 32px 0;
 }
 
 .compare-content {
@@ -168,10 +163,9 @@ p {
 }
 
 .compare-section-inner {
-    max-width: 1440px;
-    margin: 0 auto;
     display: flex;
     flex-direction: column;
+     padding: 0 120px;
 }
 
 .compare-section-content {
@@ -187,21 +181,18 @@ p {
 
 
 /* footer section  */
-
-footer {
+.site-footer {
     background-color: #232323;
-    color: #fff; /* Textfarbe für bessere Lesbarkeit */
-    width: 100%;
+    color: #fff;
+    padding: 18px 0;
 }
 
+
 .footer-inner {
-    max-width: 1440px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    min-height: 120px;
-    padding: 0 5%; /* statt fester 120px → prozentual */
-    box-sizing: border-box;
+    width: 100%;
 }
 
 .footerLogo {
