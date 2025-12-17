@@ -8,6 +8,8 @@ body {
     font-size: 16px;
     background-color: #fff;
     color: #333;
+    height: 100%;
+    padding: 0;
 }
 
 header {
@@ -188,6 +190,8 @@ p {
 
 footer {
     background-color: #232323;
+    color: #fff; /* Textfarbe für bessere Lesbarkeit */
+    width: 100%;
 }
 
 .footer-inner {
@@ -196,12 +200,14 @@ footer {
     align-items: center;
     justify-content: space-between;
     min-height: 120px;
-    padding-inline: 120px;
+    padding: 0 5%; /* statt fester 120px → prozentual */
+    box-sizing: border-box;
 }
 
 .footerLogo {
     filter: brightness() invert();
     height: 90px;
+    margin-right: auto;
 }
 
 

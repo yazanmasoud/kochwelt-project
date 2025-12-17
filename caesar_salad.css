@@ -1,12 +1,13 @@
 /* Hauptlayout */
+
+
 main {
-   display: flex;
+  display: flex;
+  flex: 1;
   flex-direction: column;
   align-items: center;
   max-width: 1440px;
   margin: 0 auto;
-  /* padding: 20px; */
-  
 }
 
 /* Rezeptkarte */
@@ -68,8 +69,8 @@ background-color: #1e88e5;
 .card {
 background: #ffffff;
 border-radius: 10px;
-padding: 20px;
-margin-bottom: 24px;
+padding: 16px;
+margin-bottom: 8px;
 }
 
 .input { color: #43a047;
@@ -90,6 +91,7 @@ li {
   padding: 10px;
   border-radius: 5px;
   text-align: left;
+  font-size: 12px;
 }
 
 ul li:nth-child(odd) {
@@ -274,8 +276,8 @@ width: 120px;
   }
 
   li {
-    font-size: 14px;
-    padding: 6px;
+    font-size: 16px;
+    padding: 8px;
   }
 
   .socialMedia {
