@@ -1,5 +1,6 @@
 html {
     scroll-behavior: smooth;
+    height: 100%;
 }
 
 body {
@@ -10,6 +11,12 @@ body {
     color: #333;
     height: 100%;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1 0 auto;
 }
 
 header {
@@ -31,7 +38,6 @@ header {
     max-width: 1440px;
     margin: 0 auto;
 }
-
 
 .headerLogo-img {
     height: 90px;
@@ -116,25 +122,30 @@ p {
 
 
 }
+
 /* hihi */
 /* Croissant Cards */
 .menu-section {
     background-color: #f0f0f0;
 
 }
-.card-row{
+
+.card-row {
     display: flex;
     justify-content: space-between;
 }
-.card img{
+
+.card img {
     width: 200px;
     height: 200px;
     object-fit: cover;
 }
+
 .menu-section h2 {
     text-align: center;
 }
-.card{
+
+.card {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -175,6 +186,7 @@ p {
 .compare-content-paragraph {
     width: 70%;
 }
+
 .compare-section h2 {
     text-align: center;
 }
@@ -185,8 +197,8 @@ p {
     background-color: #232323;
     color: #fff;
     padding: 24px 0;
+    flex-shrink: 0;
 }
-
 
 .footer-inner {
     display: flex;

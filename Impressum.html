@@ -7,6 +7,7 @@
    <title>Impressum</title>
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="navigation_bar.css">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet">
@@ -21,23 +22,68 @@
 </head>
 
 <body>
-   <div>
-      <h1>Legal Notice</h1>
-      <p>Information about the service provider.</p>
-      <p>Zahir Afsar</p>
-      <p>Hannoverstrasse 1, HannoverStiege 1 HannoverTür 1, <br />1234 Hannoverhausen, <br />Deutschland
-      </p>
-      <p>
-         <strong>Phone number:</strong> 01234/56789<br />
-         <strong>Fax:</strong> 01234/56789-0<br />
-         <strong>Email:</strong> <a href="mailto:Zahir.Afsar86@gmail.com">Zahir.Afsar86@gmail.com</a>
-      </p>
-      <p>All texts are copyrighted.</p>
-      <p style="margin-top:15px;">Source: Created with the <a href="https://www.adsimple.at/impressum-generator/"
-            title="Impressum Generator Austria by AdSimple">Impressum Generator</a> by AdSimple</p><br>
-      <a class="datenschutz" href="datenschutz.html">Datenschutz</a>
-   </div>
+      <header>
+         <div class="header-inner container">
+            <a href="index.html"><img class="headerLogo-img" src="./assets/img/logo.png" alt=""></a>
+            <div class="burger" onclick="document.body.classList.toggle('nav-open')">
+               <span></span>
+               <span></span>
+               <span></span>
+            </div>
+            <nav>
+               <a href="index.html">Start</a>
+               <a href="#main">Rezept des Tages</a>
+               <a href="contact_form.html">Kontakt</a>
+               <a href="Impressum.html">Impressum</a>
+            </nav>
+         </div>
+      </header>
 
+      <div class="content">
+         <h1>Legal Notice</h1>
+         <p>Information about the service provider.</p>
+         <p>Zahir Afsar</p>
+         <p>Hannoverstrasse 1, HannoverStiege 1 HannoverTür 1, <br />1234 Hannoverhausen, <br />Deutschland
+         </p>
+         <p>
+            <strong>Phone number:</strong> 01234/56789<br />
+            <strong>Fax:</strong> 01234/56789-0<br />
+            <strong>Email:</strong> <a href="mailto:Zahir.Afsar86@gmail.com">Zahir.Afsar86@gmail.com</a>
+         </p>
+         <p>All texts are copyrighted.</p>
+         <p style="margin-top:15px;">Source: Created with the <a href="https://www.adsimple.at/impressum-generator/"
+               title="Impressum Generator Austria by AdSimple">Impressum Generator</a> by AdSimple</p><br>
+         <a class="datenschutz" href="datenschutz.html">Datenschutz</a>
+      </div>
+
+      <footer class="site-footer">
+         <div class="footer-inner container">
+            <div class="footercontent">
+               <img class="footerLogo" src="./assets/img/logo.png" alt="Kochwelt.img">
+            </div>
+
+            <div class="socialMedia">
+               <a href="http://www.facebook.com" target="_blank" class="link_decoration_social">
+                  <div class="social_side_by_side facebookbutton">
+                     <img class="IconSocialMedia Icons" src="./assets/img/icons/facebook.png" alt="">
+                  </div>
+               </a>
+
+               <a href="https://www.instagram.com/" target="_blank" class="link_decoration_social">
+                  <div class="social_side_by_side">
+                     <img class=" IconSocialMedia Icons" src="./assets/img/icons/instagram.png" alt="Instagram Logo">
+                  </div>
+               </a>
+
+               <a href="https://x.com/en/using-x/download-the-x-app" target="_blank" class="link_decoration_social">
+                  <div class="social_side_by_side">
+                     <img class=" IconSocialMedia Icons" src="./assets/img/icons/x.png" alt="X Logo">
+                  </div>
+               </a>
+            </div>
+         </div>
+      </footer>
+   </div>
 </body>
 
 </html>
