@@ -8,6 +8,8 @@ body {
     font-size: 16px;
     background-color: #fff;
     color: #333;
+    height: 100%;
+    padding: 0;
 }
 
 header {
@@ -16,15 +18,13 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
+    padding: 18px 0;
 }
 
 .header-inner {
-    max-width: 1440px;
-    margin: 0 auto;
     justify-content: space-between;
     align-items: flex-end;
     display: flex;
-    padding: 10px 70px;
 }
 
 .container {
@@ -57,7 +57,7 @@ p {
     flex-direction: column;
     cursor: pointer;
     gap: 5px;
-    padding: 18px;
+    padding: 24px;
 
 }
 
@@ -80,8 +80,6 @@ p {
 
 .hero-recipe-description a {
     width: 100px;
-
-
 }
 
 .hero-img {
@@ -91,12 +89,10 @@ p {
 }
 
 .hero-content {
-    max-width: 1440px;
-    margin: 0 auto;
     display: flex;
     align-items: flex-start;
+    padding: 24px 0;
     gap: 50px;
-    padding: 50px 120px 50px 120px;
 }
 
 .hero button {
@@ -120,37 +116,36 @@ p {
 
 
 }
-
+/* hihi */
 /* Croissant Cards */
 .menu-section {
-    text-align: center;
     background-color: #f0f0f0;
-    background-size: cover;
-    padding: 0px 120px 32px 120px;
 
 }
-
-.card-row {
-
+.card-row{
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    gap: 150px;
-
 }
-
-.card-img {
+.card img{
+    width: 200px;
     height: 200px;
-    width: 220px;
     object-fit: cover;
-    border-radius: 5px;
 }
+.menu-section h2 {
+    text-align: center;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+
 
 /* Vergleich Section */
 .compare-section {
-    padding: 0 120px 32px 120px;
-    max-width: 1440px;
-    margin: 0 auto;
+    padding: 24px 0;
 }
 
 .compare-content {
@@ -166,8 +161,6 @@ p {
 }
 
 .compare-section-inner {
-    max-width: 1440px;
-    margin: 0 auto;
     display: flex;
     flex-direction: column;
 }
@@ -182,26 +175,30 @@ p {
 .compare-content-paragraph {
     width: 70%;
 }
+.compare-section h2 {
+    text-align: center;
+}
 
 
 /* footer section  */
-
-footer {
+.site-footer {
     background-color: #232323;
+    color: #fff;
+    padding: 24px 0;
 }
 
+
 .footer-inner {
-    max-width: 1440px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    min-height: 120px;
-    padding-inline: 120px;
+    width: 100%;
 }
 
 .footerLogo {
     filter: brightness() invert();
     height: 90px;
+    margin-right: auto;
 }
 
 
@@ -262,11 +259,6 @@ footer {
 
     .card-row {
         gap: 100px;
-    }
-
-    .menu-section {
-        padding: 0px 70px 32px 70px;
-
     }
 
     .burger {

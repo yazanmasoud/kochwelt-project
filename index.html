@@ -16,25 +16,25 @@
 <body>
 
     <header>
-        <div class="header-inner">
-            <a href="#start"><img class="headerLogo-img" src="./assets/img/logo.png" alt=""></a>
+        <div class="header-inner container">
+            <a href="index.html"><img class="headerLogo-img" src="./assets/img/logo.png" alt=""></a>
             <div class="burger" onclick="document.body.classList.toggle('nav-open')">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
             <nav>
-                <a href="#start">Start</a>
-                <a href="recipe3.html">Rezept des Tages</a>
+                <a href="index.html">Start</a>
+                <a href="#main">Rezept des Tages</a>
                 <a href="contact_form.html">Kontakt</a>
-                <a href="Impressum.html" target="_blank">Impressum</a>
+                <a href="Impressum.html">Impressum</a>
             </nav>
         </div>
     </header>
 
     <!-- Hero Section -->
     <section class="hero">
-        <div class="hero-content" id="start">
+        <div class="hero-content container" id="start">
             <img src="./assets/img/ludovic-avice-yr-sW_x9aHk-unsplash.jpg" class="hero-img" alt="rezept1">
             <div class="hero-recipe-description">
                 <div class="hero-paragraph">
@@ -46,14 +46,15 @@
                         Lieblingssnacks!
                     </p>
                 </div>
-                <a href="recipe3.html"><button>Rezept öffnen</button></a>
+                <a href="humus-recipe.html"><button>Rezept öffnen</button></a>
             </div>
         </div>
     </section>
 
     <!-- Croissant Cards -->
     <section class="menu-section">
-        <div class="container"> <!-- content begrenzung -->
+        <div class="container">
+        
             <h2>Lust auf was Neues?</h2>
             <div class="card-row">
                 <div class="card">
@@ -80,7 +81,7 @@
 
     <!-- Vergleich Section -->
     <section class="compare-section">
-        <div class="compare-section-inner">
+        <div class="compare-section-inner container">
             <h2>Hauptmahlzeit vs. Dessert - Gesunde Ernährung und
                 süßer Abschluss</h2>
             <div class="compare-section-content">
@@ -107,8 +108,8 @@
     </section>
 
     <!-- footer Section -->
-    <footer>
-        <div class="footer-inner">
+    <footer class="site-footer">
+        <div class="footer-inner container">
             <div class="footercontent">
                 <img class="footerLogo" src="./assets/img/logo.png" alt="Kochwelt.img">
             </div>

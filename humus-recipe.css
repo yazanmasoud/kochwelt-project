@@ -1,18 +1,50 @@
-/* main */
-main {
-    max-width: 1440px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+* {
+    box-sizing: border-box;
 }
 
-main img {
-    width: 90vw;
+body {
+    margin: 0;
+}
+
+header,
+footer {
+    width: 100%;
+}
+
+/* main */
+main {
+    display: block;
+
+}
+
+
+.hero-section img {
+    width: 100%;
     height: 250px;
     object-fit: cover;
     border-radius: 10px;
 }
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.hero-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 
 /* badges */
 .badges {
@@ -32,15 +64,17 @@ main img {
 
 /* separator */
 .separator {
-    background-color: #c4c1c1;
-    width: 100vw;
+    width: 100%;
     height: 1px;
+    background-color: #c4c1c1;
     margin-bottom: 24px;
 }
 
 /* Rezept Liste */
 
-
+.calculate-section{
+    width: 100%;
+}
 button {
     background-color: green;
     color: white;
@@ -56,9 +90,9 @@ button {
 
 /* table */
 ul {
+    width: 100%;
     margin: 30px 0px;
-    width: 90vw;
-    padding-left: 0px;
+    padding: 0px;
 
 
 }
@@ -77,11 +111,10 @@ ul li:nth-child(odd) {
 
 /* preparation */
 .preparation {
+    width: 100%; 
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 90vw;
-    object-fit: cover;
     margin-bottom: 24px;
     padding-top: 0;
 }
@@ -92,7 +125,7 @@ ul li:nth-child(odd) {
     display: flex;
     gap: 10px;
     padding: 5px;
-    width: 80px;
+    width: 90px;
     margin-bottom: 24px;
 }
 
@@ -116,19 +149,22 @@ ul li:nth-child(odd) {
     font-size: 30px;
 }
 
-@media(max-width: 500px){
-    .badges{
+@media(max-width: 500px) {
+    .badges {
         flex-direction: column;
     }
-    main h1{
+
+    main h1 {
         font-size: 24px;
     }
-    .producer{
+
+    .producer {
         font-size: 24px;
     }
 }
-@media(max-width: 350px){
-    input{
-    width: 60px;
-}
+
+@media(max-width: 350px) {
+    input {
+        width: 60px;
+    }
 }
