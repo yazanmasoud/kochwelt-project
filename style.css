@@ -1,13 +1,22 @@
 html {
     scroll-behavior: smooth;
     height: 100%;
+<<<<<<< HEAD
+=======
+
+}
+
+main {
+    flex: 1;
+>>>>>>> 36ef6897ffb5f624c985493f71daa18a5349fd9e
 }
 
 body {
+    display: flex;
+    flex-direction: column;
     font-family: "Raleway", sans-serif;
     margin: 0px;
     font-size: 16px;
-    background-color: #fff;
     color: #333;
     height: 100%;
     padding: 0;
@@ -19,6 +28,21 @@ body {
     flex: 1 0 auto;
 }
 
+h1 {
+    padding: 48px 0 16px 0;
+    margin: 0;
+}
+
+h2 {
+    padding: 24px 0 16px 0;
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+/* Header  */
 header {
     box-shadow: 0px 8px 24px rgba(149, 159, 149, 0.2);
     background-size: cover;
@@ -43,19 +67,36 @@ header {
     height: 90px;
 }
 
-h1 {
-    padding: 48px 0 16px 0;
-    margin: 0;
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+
 }
 
-h2 {
-    padding: 24px 0 16px 0;
-    margin: 0;
+nav a:hover {
+    color: green;
 }
 
-p {
-    margin: 0;
+nav a:active {
+    text-decoration: underline;
+    text-underline-offset: 9px;
+    text-decoration-thickness: 4px;
 }
+
+
+.logo-img {
+    width: 170px;
+    height: auto;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+    padding-left: 200px;
+}
+
+
 
 /* burger menü */
 .burger {
@@ -188,6 +229,12 @@ p {
 }
 
 .compare-section h2 {
+    text-align: center;
+}
+
+/* impressum */
+.impressum-content {
+    flex: 1;
     text-align: center;
 }
 

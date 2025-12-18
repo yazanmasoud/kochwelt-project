@@ -15,32 +15,39 @@
 
 <body>
     <header>
-        <div class="header-inner">
+        <div class="header-inner container">
             <a href="index.html"><img class="headerLogo-img" src="./assets/img/logo.png" alt=""></a>
+            <div class="burger" onclick="document.body.classList.toggle('nav-open')">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
             <nav>
                 <a href="index.html">Start</a>
-                <a href="recipe3.html">Rezept des Tages</a>
+                <a href="humus-recipe.html">Rezept des Tages</a>
                 <a href="contact_form.html">Kontakt</a>
-                <a href="Impressum.html" target="_blank">Impressum</a>
+                <a href="Impressum.html">Impressum</a>
             </nav>
         </div>
     </header>
-    <form class="contact-form" onsubmit="sendMail(event)">
-        <h2>Kontaktiere Uns</h2>
-        <label for="name">Dein Name:</label>
-        <input type="text" id="name" name="name" required>
+    <main>
+        <form class="contact-form" onsubmit="sendMail(event)">
+            <h2>Kontaktiere Uns</h2>
+            <label for="name">Dein Name:</label>
+            <input type="text" id="name" name="name" required>
 
-        <label for="email">Deine E-Mail:</label>
-        <input type="email" id="email" name="email" required>
+            <label for="email">Deine E-Mail:</label>
+            <input type="email" id="email" name="email" required>
 
-        <label for="messsage">Deine Nachricht:</label>
-        <textarea name="messsage" id="message" rows="12" required></textarea>
+            <label for="messsage">Deine Nachricht:</label>
+            <textarea name="messsage" id="message" rows="12" required></textarea>
 
-        <button type="submit">Abschicken</button>
-        <p id="form-feedback" class="form-feedback"></p>
-    </form>
-    <footer>
-        <div class="footer-inner">
+            <button type="submit">Abschicken</button>
+            <p id="form-feedback" class="form-feedback"></p>
+        </form>
+    </main>
+    <footer class="site-footer">
+        <div class="footer-inner container">
             <div class="footercontent">
                 <img class="footerLogo" src="./assets/img/logo.png" alt="Kochwelt.img">
             </div>
