@@ -1,11 +1,14 @@
 html {
     scroll-behavior: smooth;
     height: 100%;
+<<<<<<< HEAD
+=======
 
 }
 
 main {
     flex: 1;
+>>>>>>> 36ef6897ffb5f624c985493f71daa18a5349fd9e
 }
 
 body {
