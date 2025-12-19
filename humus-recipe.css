@@ -14,7 +14,6 @@ footer {
 /* main */
 main {
     display: block;
-    
 }
 
 
@@ -92,12 +91,11 @@ button {
 }
 
 
-.recepie-head {
+.recipe-head {
     margin-bottom: 24px;
     display: flex;
     align-items: center;
     gap: 10px;
-
 }
 
 .input-button-field {
