@@ -12,9 +12,8 @@ footer {
 }
 
 /* main */
-main {
-    display: block;
-
+.main-section{
+    padding: 0 16px;
 }
 
 
