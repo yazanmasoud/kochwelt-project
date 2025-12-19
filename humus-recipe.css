@@ -92,7 +92,7 @@ button {
 }
 
 
-.recepie-head {
+.recipe-head {
     margin-bottom: 24px;
     display: flex;
     align-items: center;
@@ -180,6 +180,7 @@ ul li:nth-child(odd) {
     #input-field {
         max-width: 80px;
         padding: 4px 0 4px 1px;
+}
 }
 
 @media(max-width: 500px) {
