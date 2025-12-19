@@ -17,6 +17,47 @@
     display: block;
 }
 
+.badges {
+    display: flex;
+    gap: 32px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.badges-form {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    display: flex;
+    gap: 10px;
+    padding: 5px;
+    width: 110px;
+}
+
+.calc-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.input-button {
+    display: flex;
+}
+
+#input-field {
+    padding: 8px 0 8px 1px;
+    margin: 0;
+    border-radius: 4px;
+    border: 2px solid #f0f0f0;
+}
+
+.button {
+    background-color: rgb(9, 156, 41);
+    color: #f0f0f0;
+    margin: 0;
+    padding: 8px 32px 8px 32px;
+    border: 1px solid #f0f0f0;
+}
+
 .hero {
     width: 100%;
     display: flex;
@@ -102,20 +143,6 @@ button {
     align-items: flex-start;
 }
 
-h2 {
-    font-size: 25px;
-    padding-bottom: 30px;
-    font-weight: bold;
-    display: flex;
-}
-
-
-h3 {
-    font-size: 25px;
-    font-weight: bold;
-    padding: 20px 12px 0x 12px;
-}
-
 .preparation-section h3 {
     margin-top: 24px;
 }
@@ -190,6 +217,16 @@ p {
     display: inline;
 }
 
+.preparation-badge {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    display: flex;
+    gap: 10px;
+    padding: 5px;
+    width: 180px;
+    margin-bottom: 24px;
+}
+
 /* media section*/
 
 @media (max-width: 500px) {
@@ -199,36 +236,8 @@ p {
         padding-bottom: 20px;
     }
 
-    .portionen-input {
-        padding: 20px 60px;
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        align-items: center;
-    }
-
-    h3 {
-        font-size: 20px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding-top: 40px;
-    }
-
-    .producer {
-        font-size: 15px;
-    }
-}
-
-@media (max-width: 368px) {
-
     h1 {
-        font-size: 23px;
-    }
-
-    .text-description {
-        font-size: 15px;
-        padding: 20px 20px;
+        font-size: 24px;
     }
 
     .portionen-input {
@@ -239,15 +248,39 @@ p {
         align-items: center;
     }
 
-    h3 {
-        font-size: 18px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding-top: 40px;
-    }
+
 
     .producer {
         font-size: 15px;
+    }
+
+    .badges {
+        flex-direction: column;
+    }
+
+    .hero {
+        align-items: center;
+    }
+
+    .recipe-description {
+        align-items: center;
+    }
+
+    .calc-section {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    #input-field {
+        max-width: 80px;
+        padding: 4px 0 4px 1px;
+    }
+
+    .button {
+        padding: 4px 16px 4px 16px;
+        max-width: 80px;
+        display: flex;
+        justify-content: center;
     }
 }
