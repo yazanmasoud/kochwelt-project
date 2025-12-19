@@ -1,12 +1,13 @@
 
 function AmoutOfIndgredients() {
 
-    let inputValue = document.getElementById("cupcakeinput-field").value;
+    let inputValue = document.getElementById("input-field").value;
     let amounts = document.querySelectorAll(".Portionen");
 
-    if (inputValue === "" || inputValue < "0") {
+   if (inputValue === "" || inputValue < "0" || inputValue === "0") {
         return alert("Ungültige Eingabe!");
     }
+
     else {
         for (let i = 0; i < amounts.length; i++) {
             let element = amounts[i];

@@ -2,7 +2,7 @@ function ingredientcalc() {
     let inputValue = document.getElementById("inputnum").value;
     let amounts = document.querySelectorAll(".soloIngredient");
 
-    if (inputValue === "" || inputValue < "0") {
+    if (inputValue === "" || inputValue < "0" || inputValue === "0") {
         return alert("Ungültige Eingabe!");
     }
 

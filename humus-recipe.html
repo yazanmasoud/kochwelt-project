@@ -4,11 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yazans recepie</title>
+    <title>Yazans recipe</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="navigation_bar.css">
     <link rel="stylesheet" href="humus-recipe.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700&display=swap">
     <script src="humus-script.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="icon" type="image/png" href="./assets/img/logo_small.png">
@@ -33,7 +32,7 @@
             </nav>
         </div>
     </header>
-    <main>
+    <main class="main-section">
         <section class="hero-section container">
             <h1>The magic Of Humus</h1>
             <img src="./assets/img/ludovic-avice-yr-sW_x9aHk-unsplash.jpg" alt="image of Humus">
@@ -56,12 +55,15 @@
 
         </section>
         <div class="separator">.</div>
+
         <section class="calculate-section">
             <section class="container" id="zutatenrechner">
-                <div class="recepie-head">
+                <div class="recipe-head">
                     <span>Zutaten für</span>
+                    <div class="input-button-field">
                     <input id="input-field" type="number" min="1" value="4">
                     <button onclick="changeAmoutOfIndgredients()">Portionen</button>
+                    </div>
                 </div>
                 <ul>
                     <li><span class="amount" data-base="80">80</span>g Kichererbsen</li>

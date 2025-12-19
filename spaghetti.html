@@ -5,9 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spaghetti aglio e olio</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="navigation_bar.css">
     <link rel="stylesheet" href="spaghetti.css">
     <link rel="stylesheet" href="style.css">
     <script src="spaghetti.js"></script>
@@ -16,9 +14,8 @@
 <body onload="ingredientcalc()">
 
     <!-- header -->
-
     <header>
-        <div class="header-inner">
+        <div class="header-inner container">
             <a href="index.html"><img class="headerLogo-img" src="./assets/img/logo.png" alt=""></a>
             <div class="burger" onclick="document.body.classList.toggle('nav-open')">
                 <span></span>
@@ -27,7 +24,7 @@
             </div>
             <nav>
                 <a href="index.html">Start</a>
-                <a href="recipe3.html">Rezept des Tages</a>
+                <a href="humus-recipe.html">Rezept des Tages</a>
                 <a href="contact_form.html">Kontakt</a>
                 <a href="Impressum.html">Impressum</a>
             </nav>
@@ -35,43 +32,48 @@
     </header>
 
     <!-- main -->
-    <section class="main-section">
-        <h1>Spaghetti aglio e olio</h1>
-        <img class="main-img" src="./assets/img/spaghetti.jpg" alt="Spaghetti">
-        <div class="main-icons">
-            <div class="badge">
-                <i class="fa-regular fa-clock"></i>
-                <span>25 min</span>
-            </div>
+    <main class="main-section">
+        <section class="container">
+            <h1>Spaghetti aglio e olio</h1>
+            <img class="main-img" src="./assets/img/spaghetti.jpg" alt="Spaghetti">
+            <div class="main-icons">
+                <div class="badge">
+                    <i class="fa-regular fa-clock"></i>
+                    <span>25 min</span>
+                </div>
 
-            <div class="badge">
-                <i class="fa-solid fa-brain"></i>
-                <span>simpel</span>
-            </div>
+                <div class="badge">
+                    <i class="fa-solid fa-brain"></i>
+                    <span>simpel</span>
+                </div>
 
-            <div class="badge">
-                <i class="fa-regular fa-calendar-days"></i>
-                <span>30.11.2025</span>
+                <div class="badge">
+                    <i class="fa-regular fa-calendar-days"></i>
+                    <span>30.11.2025</span>
+                </div>
             </div>
-        </div>
-        <div class="calc-section">
-            Zutaten für
-            <div class="input-button"><input type="number" id="inputnum" min="1" value="4">
-                <button onclick="ingredientcalc()" class="button">Portionen</button>
+        </section>
+
+        <section class="container">
+            <div class="calc-section">
+                <span>Zutaten für</span>
+                <div class="input-button">
+                    <input type="number" id="inputnum" min="1" value="4">
+                    <button onclick="ingredientcalc()" class="button">Portionen</button>
+                </div>
             </div>
-        </div>
-        <ul>
-            <li><span class="soloIngredient" data-base="0.5">0.5</span> Bund(e) glatte Petersilie </li>
-            <li><span class="soloIngredient" data-base="2">2</span> rote Chilischoten</li>
-            <li><span class="soloIngredient" data-base="6">6</span> Knoblauchzehen</li>
-            <li><span class="soloIngredient" data-base="400">400</span> g Spaghetti</li>
-            <li><span class="soloIngredient" data-base="1">1</span> Prise(n) Salz</li>
-            <li><span class="soloIngredient" data-base="1">1</span> Prise(n) Pfeffer</li>
-            <li><span class="soloIngredient" data-base="6">6</span> EL Olivenöl</li>
-        </ul>
+            <ul>
+                <li><span class="soloIngredient" data-base="0.5">0.5</span> Bund(e) glatte Petersilie </li>
+                <li><span class="soloIngredient" data-base="2">2</span> rote Chilischoten</li>
+                <li><span class="soloIngredient" data-base="6">6</span> Knoblauchzehen</li>
+                <li><span class="soloIngredient" data-base="400">400</span> g Spaghetti</li>
+                <li><span class="soloIngredient" data-base="1">1</span> Prise(n) Salz</li>
+                <li><span class="soloIngredient" data-base="1">1</span> Prise(n) Pfeffer</li>
+                <li><span class="soloIngredient" data-base="6">6</span> EL Olivenöl</li>
+            </ul>
+        </section>
 
-        <div class="prep-guide">
-
+        <div class="prep-guide container">
             <h2>Zubereitung</h2>
             <div class="prep-icons">
                 <div class="prep-badge">
@@ -102,11 +104,11 @@
                 <span>Eldin</span>
             </div>
         </div>
-    </section>
+    </main>
 
     <!-- footer -->
-    <footer>
-        <div class="footer-inner">
+    <footer class="site-footer">
+        <div class="footer-inner container">
             <div class="footercontent">
                 <img class="footerLogo" src="./assets/img/logo.png" alt="Kochwelt.img">
             </div>
