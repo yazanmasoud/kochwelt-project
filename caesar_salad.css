@@ -1,287 +1,180 @@
-/* Hauptlayout */
-
-
-main {
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  align-items: center;
-  max-width: 1440px;
-  margin: 0 auto;
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0px;
+    font-size: 16px;
+    background-color: #fff;
+    color: #333;
+    max-width: 1920px;
 }
 
-/* Rezeptkarte */
-.recipe-card {
-  background: #fff;
-  padding: 24px;
-  width: 90%;
-  margin: 20px auto;
+p {
+    margin: 0;
 }
 
-.recipe-img {
-  width: 100%;
-  height: auto;
-  max-height: 400px;
-  object-fit: cover;
-  border-radius: 12px;
-  display: block;
-  margin-bottom: 24px;
+a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    padding-bottom: 12px;
 }
 
-/* Badges */
-
-.badges {
-display: flex;
-justify-content: start;
-gap: 16px;
-margin-bottom: 24px;
-}
-
-.fa-regular .fa-clock {
-background-color: #43a047;
-width: 16px;
-
-
+a:hover {
+    color: rgb(2, 138, 2);
+    text-decoration: underline;
 }
 
 .badge {
-display: flex;
-align-items: center;
-gap: 8px;
-padding: 6px 12px;
-border-radius: 8px;
-font-weight: 600;
-color: #fff;
+    background-color: #f0f0f0;
+    padding: 5px;
+    border-radius: 5px;
+    width: 100px;
 }
 
-.badge.time {
-background-color: #43a047;
+/* main */
+
+.main-section {
+    padding: 0px 16px;
 }
 
-.badge.easy {
-background-color: #fbc02d;
-}
-
-.badge.today {
-background-color: #1e88e5;
-}
-
-.card {
-background: #ffffff;
-border-radius: 10px;
-padding: 16px;
-margin-bottom: 8px;
-}
-
-.input { color: #43a047;
-font-weight: bold;
-}
-
-ul {
-  width: 100%;
-  max-width: 1440px;
-  margin: 30px 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-li {
-  width: 100%;              
-  list-style: none;
-  padding: 10px;
-  border-radius: 5px;
-  text-align: left;
-  font-size: 12px;
-}
-
-ul li:nth-child(odd) {
-background-color: #f0f0f0;
-}
-
-button {
-background-color: green;
-color: white;
-border: none;
-border-radius: 1px;
-padding: 3px;
-margin: -4px;
-cursor: pointer;
-}
-
-.ingredients ul {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.profil-container {
-  display: flex;  
-  align-items: center;
-  text-align: center;
-  gap: 32px;
-  }
-
-.amount {
-  font-weight: bold;
-  min-width: 40px;
-}
-
-.ingredients li {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  padding: 12px;
-  border-bottom: 1px solid #ddd;
-  font-size: 18px;
-  text-align: left;
-}
-
-.ingredients li:nth-child(odd) {
-background: #F0F0F0;
-}
-
-.ingredients h2 {
-padding: 24px 0;
-margin: 0;
-}
-
-.preparation ol {
-padding-left: 20px;
-}
-
-.preparation li {
-margin-bottom: 12px;
-background: #fff;
-padding: 10px;
-border-radius: 6px;
-box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-}
-
-.preparation-badge {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
-  color: white;
-  background-color: green;
-  width: 80px;
-  border-radius: 6px;
-  padding: 8px;
-}
-
-.times {
-width: 10px;
-height: 10px;
-padding: 10px;
-}
-
-.profil-img {
-width: 100px;
-height: 150px;
-}
-
-.producer {
-  display: flex;
-  font-size: 30px;
-  padding-left: 32px;
-}
-
-/* Media anpassung */
-
-@media (max-width: 1440px) {
-  main,
-  .recipe-card,
-  .ingredients_card,
-  .preparation {
+.main-img {
     width: 100%;
-    max-width: 1440px;
-    margin: 0 auto;
-    padding: 20px;
-    box-sizing: border-box;
-  }
-
-.recipe-img {
-  width: 100%;
-  max-width: 1440px;
-  height: 250px;
-  object-fit: cover;
-  border-radius: 10px;
-  display: block;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
-
+.main-icons {
+    display: flex;
+    align-items: center;
+    margin: 24px 0 48px 0;
+    gap: 24px;
+    padding: 5px;
 }
 
-@media (max-width: 1000px) {
-  .recipe-img {
-    max-height: 300px;
-  }
+.calc-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
 
+.input-button {
+    display: flex;
+}
 
-ul {
-  width: 100%;              
-  max-width: 1440px;        
-  margin: 30px 0;
-  padding: 0;
-  box-sizing: border-box;
+#inputnum {
+    padding: 8px 0 8px 1px;
+    margin: 0;
+    border-radius: 4px;
+    border: 2px solid #f0f0f0;
+}
+
+.button {
+    background-color: rgb(9, 156, 41);
+    color: #f0f0f0;
+    margin: 0;
+    padding: 8px 32px 8px 32px;
+    border: 1px solid #f0f0f0;
 }
 
 li {
-  width: 100%;              
-  list-style: none;
-  padding: 10px;
-  border-radius: 5px;
-  text-align: left;
+    list-style-type: none;
+    padding: 12px 12px 12px 12px;
+    border-radius: 10px;
 }
 
-  .producer {
-    font-size: 20px;
+ol {
     padding: 0;
-  }
-
-  .input,
-  button {
-    width: 100%;
-    margin-top: 8px;
-  }
-
 }
 
-@media (max-width: 700px) {
-.badges {
-flex-direction: column;
-width: 120px;
-}
+ul {
+    padding: 0;
 }
 
-@media (min-width: 320px) {
-  .recipe-img {
-    height: 200px;
-  }
+li:nth-child(odd) {
+    background-color: #f0f0f0;
+}
 
-  .producer {
-    font-size: 20px;
-    padding-left: 0;
-  }
+.prep-icons {
+    display: flex;
+    margin: 0 0 24px 0;
+    gap: 12px;
+    padding: 5px;
+}
 
-  .input,
-  button {
-    margin-top: 8px;
-  }
+.prep-badge {
+    background-color: #f0f0f0;
+    padding: 5px;
+    border-radius: 5px;
+    width: 170px;
+}
 
-  ul {
-    margin: 16px auto;
-    padding: 0 8px;
-  }
+.prep-guide {
+    margin-bottom: 24px;
+}
 
-  li {
-    font-size: 16px;
-    padding: 8px;
-  }
+.recipe-profile {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    font-size: 32px;
+    margin-bottom: 80px;
+    margin-top: 4px;
+}
 
-  .socialMedia {
-    justify-content: center;
-    flex-wrap: wrap;
-  }
+.profile-img {
+    background-color: #fff;
+    border: 1px solid;
+    height: 100px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    width: 100px;
+    object-fit: cover;
+}
+
+@media(max-width: 100px) {
+    .main-section {
+        padding: 0 80px 0 80px;
+    }
+}
+
+@media(max-width: 640px) {
+    body {
+        font-size: 8px;
+    }
+
+    main h1 {
+        font-size: 24px;
+    }
+
+    .main-section {
+        padding: 0px 16px;
+    }
+
+    .main-icons {
+        flex-direction: column;
+    }
+
+    .calc-section {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    #inputnum {
+        max-width: 80px;
+        padding: 4px 0 4px 1px;
+    }
+
+    .button {
+        padding: 4px 16px 4px 16px;
+        max-width: 80px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .prep-icons {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }

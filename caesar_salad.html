@@ -1,19 +1,21 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Caesar-Salat Rezept</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="caesar_salad.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <script src="scrips_caesar_salad.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spaghetti aglio e olio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="caesar_salad.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="caesar_salad.js"></script>
 </head>
 
 <body onload="changeAmoutOfIndgredients()">
+
+    <!-- header -->
     <header>
-        <div class="header-inner">
+        <div class="header-inner container">
             <a href="index.html"><img class="headerLogo-img" src="./assets/img/logo.png" alt=""></a>
             <div class="burger" onclick="document.body.classList.toggle('nav-open')">
                 <span></span>
@@ -22,85 +24,93 @@
             </div>
             <nav>
                 <a href="index.html">Start</a>
-                <a href="recipe3.html">Rezept des Tages</a>
+                <a href="humus-recipe.html">Rezept des Tages</a>
                 <a href="contact_form.html">Kontakt</a>
-                <a href="Impressum.html" target="_blank">Impressum</a>
+                <a href="Impressum.html">Impressum</a>
             </nav>
         </div>
     </header>
-    
-  <main>
-    <!-- Rezeptkarte -->
-    <section class="recipe-card">
-      <h1>Caesar-Salat</h1>
-      <img src="./assets/img/caesar_salad.png" alt="Caesar-Salat" class="recipe-img">
 
-      <!-- Badges -->
-      <div class="badges">
-        <div class="badge time"><i class="fa-regular fa-clock"></i><span>30 min</span></div>
-        <div class="badge easy"><i class="fa-solid fa-brain"></i><span>Einfach</span></div>
-        <div class="badge today"><i class="fa-regular fa-calendar-days"></i><span>04.06.1924</span></div>
-      </div>
+    <!-- main -->
+    <main class="main-section">
+        <section class="container">
+            <h1>Caesar-Salat</h1>
+            <img class="main-img" src="./assets/img/caesar_salad.png" alt="Spaghetti">
+            <div class="main-icons">
+                <div class="badge">
+                    <i class="fa-regular fa-clock"></i>
+                    <span>30 min</span>
+                </div>
 
-      <!-- Zutaten -->
-      <section class="ingredients_card">
-        <h2>Zutaten</h2>
+                <div class="badge">
+                    <i class="fa-solid fa-brain"></i>
+                    <span>einfach</span>
+                </div>
 
-            <div class="ingredients_input">
+                <div class="badge">
+                    <i class="fa-regular fa-calendar-days"></i>
+                    <span>04.06.1924</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="calc-section">
                 <span>Zutaten für</span>
-                    <input type="number" id="input-field" min="1" value="4" class="input">
-                    <button onclick="changeAmoutOfIndgredients()">Portionen</button>
+                <div class="input-button">
+                    <input type="number" id="inputnum" min="1" value="4">
+                    <button onclick="changeAmoutOfIndgredients()" class="button">Portionen</button>
+                </div>
             </div>
-        <ul>
-            <li><span class="amount" data-base="1">1</span> Romana-Salatherz</li>
-            <li><span class="amount" data-base="0.12">0.12</span> Glas Sardellenfilets</li>
-            <li><span class="amount" data-base="50">50</span> ml Kapern</li>
-            <li><span class="amount" data-base="5">5</span> g Mayonnaise</li>
-            <li><span class="amount" data-base="0.5">0.5</span> TL Senf</li>
-            <li><span class="amount" data-base="0.25">0.25</span> EL Zitronensaft & Abrieb</li>
-            <li><span class="amount" data-base="12.5">12.5</span> g geriebener Parmesan</li>
-            <li><span class="amount" data-base="25">25</span> g gehobelter Parmesan</li>
-            <li><span class="amount" data-base="0.25">0.25</span> TL Salz & Cayennepfeffer</li>
-            <li><span class="amount" data-base="20">20</span> ml Olivenöl</li>
-    </ul>
+            <ul>
+                <li><span class="amount" data-base="1">1</span> Romana-Salatherz(en)</li>
+                <li><span class="amount" data-base="0.12">0.12</span> Gla(e)s(er) Sardellenfilets</li>
+                <li><span class="amount" data-base="50">50</span> ml Kapern</li>
+                <li><span class="amount" data-base="5">5</span> g Mayonnaise</li>
+                <li><span class="amount" data-base="0.5">0.5</span> TL Senf</li>
+                <li><span class="amount" data-base="0.25">0.25</span> EL Zitronensaft & Abrieb</li>
+                <li><span class="amount" data-base="12.5">12.5</span> g geriebener Parmesan</li>
+                <li><span class="amount" data-base="25">25</span> g gehobelter Parmesan</li>
+                <li><span class="amount" data-base="0.25">0.25</span> TL Salz & Cayennepfeffer</li>
+                <li><span class="amount" data-base="20">20</span> ml Olivenöl</li>
+            </ul>
 
-        
-      </section>
+        </section>
 
-      <!-- Zubereitung -->
-        <div class="preparation card">
- 
-        </div>
+        <div class="prep-guide container">
+            <h2>Zubereitung</h2>
+            <div class="prep-icons">
+                <div class="prep-badge">
+                    <i class="fa-regular fa-clock"></i>
+                    <span>Schneiden: 10 min</span>
+                </div>
 
-                <section class="preparation" id="zubereitung">
-            <h2 class="preparation-title-margin">Zubereitung</h2>
-            <div class="preparation-badge">
-                <i class="fa-regular fa-clock"></i>
-                <span>30 min</span>
+                <div class="prep-badge">
+                    <i class="fa-regular fa-clock"></i>
+                    <span>Zubereitung: 20 min</span>
+                </div>
             </div>
+
             <span><br>
-                Knoblauch pressen, Zitrone abreiben und Saft auspressen. 
+                Knoblauch pressen, Zitrone abreiben und Saft auspressen.
                 Sardellen und Kapern hacken.<br>
                 Mayonnaise mit Senf, Knoblauch, Kapernwasser, Sardellenöl und Zitronenabrieb verrühren.<br>
                 Ciabatta würfeln, mit Olivenöl rösten und Croutons beiseitestellen.<br>
                 Salat waschen, zupfen und mit Dressing vermengen.
                 Mit Croutons und Parmesan bestreuen und sofort servieren.
             </span>
-            <h3>Rezept Erstellt von</h3>
-              <div class="profil-container">
-                <img class="profil-img" src="./assets/img/231257.png" alt="profil picture">
-                <h3 class="producer">Zahir</h3>
-              </div>
-        
 
-    </section>
-  </main>
+            <h3>Rezept erstellt von</h3>
+            <div class="recipe-profile">
+                <img class="profile-img" src="./assets/img/zahir.png" alt="Eldin Hasic">
+                <span>Zahir</span>
+            </div>
+        </div>
+    </main>
 
-
-  
     <!-- footer -->
-    <footer>
-        <div class="footer-inner">
+    <footer class="site-footer">
+        <div class="footer-inner container">
             <div class="footercontent">
                 <img class="footerLogo" src="./assets/img/logo.png" alt="Kochwelt.img">
             </div>
