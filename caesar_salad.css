@@ -161,7 +161,7 @@ li:nth-child(odd) {
         gap: 8px;
     }
 
-    #inputnum {
+    #input-field {
         max-width: 80px;
         padding: 4px 0 4px 1px;
     }
