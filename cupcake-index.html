@@ -9,6 +9,9 @@
     <link rel="icon" type="image/png" href="./assets/img/logo_small.png">
     <link rel="stylesheet" href="cupcake-style.css">
     <script src="cupcake.js"></script>
+    <script src="scrips-cupcake.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
 </head>
 
 <body onabort="AmoutOfIndgredients()">
@@ -39,20 +42,21 @@
                 <span class="text-description">Diese Cupcakes überzeugen mit luftigem Teig und leckerer Buttercreme.
                     Unsere Schritt-für-Schritt-Anleitung zeigt, wie du diese hübschen Vanille-Cupcakes ganz einfach
                     selbst machen kannst.</span>
-                <div class="Icons-Group">
-                    <div class="recipe-property-group-details">
-                        <img class="icons_img" src="./assets/img/icons/clock-regular.svg" />
-                        <p class="icons_p_mobile">45 min</p>
-                    </div>
-                    <div class="recipe-property-group-details">
-                        <img class="icons_img" src="./assets/img/icons/brain-solid.svg"" />
-            <p class=" icons_p_mobile">einfach</p>
-                    </div>
-                    <div class="recipe-property-group-details">
-                        <img class="icons_img" src="./assets/img/icons/calendar-alt-regular.svg" />
-                        <p class="icons_p_mobile">30.11.2025</p>
+                <div class="badges">
+                    <div class="badges-form">
+                        <i class="fa-regular fa-clock"></i>
+                        <span>45 min</span>
                     </div>
 
+                    <div class="badges-form">
+                        <i class="fa-solid fa-brain"></i>
+                        <span>einfach</span>
+                    </div>
+
+                    <div class="badges-form">
+                        <i class="fa-regular fa-calendar-days"></i>
+                        <span>30.11.2025</span>
+                    </div>
                 </div>
             </div>
         </section>
@@ -61,14 +65,16 @@
         <div class="separator">.</div>
         <section>
             <section class="cupcake-recipe container">
-                <div class="portionen-input">
-                    <label>Zutaten für </label>
-                    <input id="cupcakeinput-field" type="number" min="1" value="12">
-                    <button onclick="AmoutOfIndgredients()">Portionen</button>
+            <div class="calc-section">
+                <span>Zutaten für</span>
+                <div class="input-button">
+                    <input type="number" id="input-field" min="1" value="4">
+                    <button onclick="AmoutOfIndgredients()" class="button">Portionen</button>
                 </div>
+            </div>
 
                 <ul>
-                    <h3>Für den Teig</h3>
+                    <h2>Für den Teig</h2>
                     <li><span class="Portionen" data-bases="10.33">120 </span>g weiche Butter</li>
                     <li><span class="Portionen" data-bases="10.33">120 </span>g Zucker</li>
                     <li><span class="Portionen" data-bases="0.08">1 </span> Vanilleschote</li>
@@ -78,7 +84,7 @@
                     <li><span class="Portionen" data-bases="0.41">5 </span> Buttermilch</li>
 
 
-                    <h3>Für die Buttercreme</h3>
+                    <h2>Für die Buttercreme</h2>
                     <li><span class="Portionen" data-bases="12.5">150 </span>g weiche Butter</li>
                     <li><span class="Portionen" data-bases="16.67">200 </span>g Puderzucker</li>
                     <li><span class="Portionen" data-bases="0.08">1 </span> TL Vanilleextrakt</li>
@@ -92,17 +98,12 @@
 
         <section class="preparation-section container">
 
-            <h3>Zubereitung</h3>
-            <div class="Icons-Group">
-                <div class="recipe-property-group-details">
-                    <img class="icons_img" src="./assets/img/icons/clock-regular.svg" alt="">
-                    <p> Vorbereitung 25 min</p>
-                </div>
-                <div class="recipe-property-group-details">
-                    <img class="icons_img" src="./assets/img/icons/clock-regular.svg" alt="">
-                    <p>Backen 18 min</p>
-                </div>
+            <h2>Zubereitung</h2>
+            <div class="preparation-badge">
+                <i class="fa-regular fa-clock"></i>
+                <span>Zubereitung 43 min</span>
             </div>
+
             <div class="preparation-steps">
                 <p class="step-text">1. SCHRITT</p>
 
