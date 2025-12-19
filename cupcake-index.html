@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VANILLA CUPCAKE</title>
@@ -7,12 +8,12 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="./assets/img/logo_small.png">
     <link rel="stylesheet" href="cupcake-style.css">
-    <script src="scrips-cupcake.js"></script> 
+    <script src="scrips-cupcake.js"></script>
 </head>
 
 <body onabort="AmoutOfIndgredients()">
     <header>
-        <div class="header-inner">
+        <div class="header-inner container">
             <a href="index.html"><img class="headerLogo-img" src="./assets/img/logo.png" alt=""></a>
             <div class="burger" onclick="document.body.classList.toggle('nav-open')">
                 <span></span>
@@ -21,105 +22,119 @@
             </div>
             <nav>
                 <a href="index.html">Start</a>
-                <a href="recipe3.html">Rezept des Tages</a>
+                <a href="humus-recipe.html">Rezept des Tages</a>
                 <a href="contact_form.html">Kontakt</a>
                 <a href="Impressum.html">Impressum</a>
             </nav>
         </div>
     </header>
 
- <main>
-    <h1>Cupcake Grundrezept</h1>
-    <img class="cupcake-img" src="./assets/img/cupcakes-2250367_1280.jpg" alt="cupcakePhoto">
-    <section >
-        <div class="recipe-description">
-          <span class="text-description">Diese Cupcakes überzeugen mit luftigem Teig und leckerer Buttercreme. Unsere Schritt-für-Schritt-Anleitung zeigt, wie du diese hübschen Vanille-Cupcakes ganz einfach selbst machen kannst.</span>
-          <div class="Icons-Group">
-            <div class="recipe-property-group-details">
-            <img class="icons_img" src="./assets/img/icons/clock-regular.svg" />
-            <p class="icons_p_mobile">45 min</p>
+
+    <main >
+        <section class="hero container">
+            <h1>Cupcake Grundrezept</h1>
+            <img class="cupcake-img" src="./assets/img/cupcakes-2250367_1280.jpg" alt="cupcakePhoto">
+
+            <div class="recipe-description">
+                <span class="text-description">Diese Cupcakes überzeugen mit luftigem Teig und leckerer Buttercreme.
+                    Unsere Schritt-für-Schritt-Anleitung zeigt, wie du diese hübschen Vanille-Cupcakes ganz einfach
+                    selbst machen kannst.</span>
+                <div class="Icons-Group">
+                    <div class="recipe-property-group-details">
+                        <img class="icons_img" src="./assets/img/icons/clock-regular.svg" />
+                        <p class="icons_p_mobile">45 min</p>
+                    </div>
+                    <div class="recipe-property-group-details">
+                        <img class="icons_img" src="./assets/img/icons/brain-solid.svg"" />
+            <p class=" icons_p_mobile">einfach</p>
+                    </div>
+                    <div class="recipe-property-group-details">
+                        <img class="icons_img" src="./assets/img/icons/calendar-alt-regular.svg" />
+                        <p class="icons_p_mobile">30.11.2025</p>
+                    </div>
+
+                </div>
             </div>
-            <div class="recipe-property-group-details">
-            <img class="icons_img" src="./assets/img/icons/brain-solid.svg"" />
-            <p class="icons_p_mobile">einfach</p>
-            </div>
-            <div class="recipe-property-group-details">
-            <img class="icons_img" src="./assets/img/icons/calendar-alt-regular.svg" />
-            <p class="icons_p_mobile">30.11.2025</p>
-            </div>
-          
-          </div>
-        </div>
-     </section> 
+        </section>
     </main>
-
-     <section class="cupcake-recepie" >
-            <div class="recepieCupcake-head" >
-                <div class="portionen-input">
-                    <label>Zutaten für </label>
-                    <input id="cupcakeinput-field" type="number" min="1" value="12" >
-                    <button onclick="AmoutOfIndgredients()">Portionen</button>
-                </div>
+    <!-- hi -->
+    <div class="separator">.</div>
+    <section>
+        <section class="cupcake-recepie container">
+            <div class="portionen-input">
+                <label>Zutaten für </label>
+                <input id="cupcakeinput-field" type="number" min="1" value="12">
+                <button onclick="AmoutOfIndgredients()">Portionen</button>
             </div>
-      </section>
-     <div class="ingredients-list">
-                <ul >
-                  <h3>Für den Teig</h3>
-                    <li><span class="Portionen" data-bases="10.33">120 </span>g weiche Butter</li>
-                    <li><span class="Portionen" data-bases="10.33">120 </span>g Zucker</li>
-                    <li><span class="Portionen" data-bases="0.08">1 </span> Vanilleschote</li>
-                    <li><span class="Portionen" data-bases="0.16">2 </span> Eier (Gr. M)</li>
-                    <li><span class="Portionen" data-bases="12.5">150 </span> Weizenmehl (Type 405)</li>
-                    <li><span class="Portionen" data-bases="0.16">2 </span> Backpulver</li>
-                    <li><span class="Portionen" data-bases="0.41">5 </span> Buttermilch</li>
-                
-           
-                    <h3>Für die Buttercreme</h3>
-                    <li><span class="Portionen" data-bases="12.5">150 </span>g weiche Butter</li>
-                    <li><span class="Portionen" data-bases="16.67">200 </span>g Puderzucker</li>
-                    <li><span class="Portionen" data-bases="0.08">1 </span> TL Vanilleextrakt</li>
-                    <li><span class="Portionen" data-bases="0.16">2 </span> EL Milch</li>
-                    <li><span></span>Zuckerperlen zum Dekorieren</li>
-                </div>
-        
-     <div class="separator">.</div>
-     
-<section class="preparation-section">
 
-  <h3>Zubereitung</h3>
-  <div class="Icons-Group">
-    <div class="recipe-property-group-details">
-    <img  class="icons_img" src="./assets/img/icons/clock-regular.svg" alt="">
-    <p> Vorbereitung 25 min</p>
-    </div>
-    <div class="recipe-property-group-details">
-    <img  class="icons_img" src="./assets/img/icons/clock-regular.svg" alt="">
-    <p>Backen 18 min</p>
-    </div>
-  </div>
-    <div class="preparation-steps"> 
-    <p class="step-text">1. SCHRITT</p> 
-    
-    <span class="Preparation-step-text">Die Mulden eines Muffinblechs (12 Mulden) mit Papierförmchen auslegen. Backofen auf 180 Grad Ober-/ Unterhitze (Umluft: 160 Grad) vorheizen. Für den Teig Butter, Zucker und Mark einer Vanilleschote schaumig schlagen. Eier einzeln hinzugeben und mindestens 30 Sekunden unterschlagen.</span>
-  </div>
-  <div class="preparation-steps">
-    <p class="step-text">2. SCHRITT</p>
-    <span class="Preparation-step-text">Mehl mit Backpulver vermischen, mit der Buttermilch zum Teig geben und verrühren. Teig mit einem Eisportionierer auf die Papierförmchen verteilen. Cupcakes im vorgeheizten Ofen ca. 18 Minuten backen. Vorsichtig aus dem Blech holen und vollständig auf einem Kuchengitter abkühlen lassen.</span>
-  </div>
-  <div class="preparation-steps">
-    <p class="step-text">3. SCHRITT</p>
-    <span class="Preparation-step-text">Für die Buttercreme die Butter hell aufschlagen. Puderzucker gesiebt nach und nach dazugeben, Vanilleextrakt und Milch dazugeben und weiterschlagen. Buttercreme in einen Spritzbeutel mit Sterntülle füllen und auf die abgekühlten Cupcakes spritzen. Nach Belieben mit Zuckerperlen dekorieren und servieren.</span>
-  </div>
-</section>
-<section class="profile-section">
- <h3>Rezept Erstellt von</h3>
-            <div class="profil-container">
+            <ul>
+                <h3>Für den Teig</h3>
+                <li><span class="Portionen" data-bases="10.33">120 </span>g weiche Butter</li>
+                <li><span class="Portionen" data-bases="10.33">120 </span>g Zucker</li>
+                <li><span class="Portionen" data-bases="0.08">1 </span> Vanilleschote</li>
+                <li><span class="Portionen" data-bases="0.16">2 </span> Eier (Gr. M)</li>
+                <li><span class="Portionen" data-bases="12.5">150 </span> Weizenmehl (Type 405)</li>
+                <li><span class="Portionen" data-bases="0.16">2 </span> Backpulver</li>
+                <li><span class="Portionen" data-bases="0.41">5 </span> Buttermilch</li>
+
+
+                <h3>Für die Buttercreme</h3>
+                <li><span class="Portionen" data-bases="12.5">150 </span>g weiche Butter</li>
+                <li><span class="Portionen" data-bases="16.67">200 </span>g Puderzucker</li>
+                <li><span class="Portionen" data-bases="0.08">1 </span> TL Vanilleextrakt</li>
+                <li><span class="Portionen" data-bases="0.16">2 </span> EL Milch</li>
+                <li><span></span>Zuckerperlen zum Dekorieren</li>
+            </ul>
+        </section>
+    </section>
+
+    <div class="separator">.</div>
+
+    <section class="preparation-section container">
+
+        <h3>Zubereitung</h3>
+        <div class="Icons-Group">
+            <div class="recipe-property-group-details">
+                <img class="icons_img" src="./assets/img/icons/clock-regular.svg" alt="">
+                <p> Vorbereitung 25 min</p>
+            </div>
+            <div class="recipe-property-group-details">
+                <img class="icons_img" src="./assets/img/icons/clock-regular.svg" alt="">
+                <p>Backen 18 min</p>
+            </div>
+        </div>
+        <div class="preparation-steps">
+            <p class="step-text">1. SCHRITT</p>
+
+            <span class="Preparation-step-text">Die Mulden eines Muffinblechs (12 Mulden) mit Papierförmchen auslegen.
+                Backofen auf 180 Grad Ober-/ Unterhitze (Umluft: 160 Grad) vorheizen. Für den Teig Butter, Zucker und
+                Mark einer Vanilleschote schaumig schlagen. Eier einzeln hinzugeben und mindestens 30 Sekunden
+                unterschlagen.</span>
+        </div>
+        <div class="preparation-steps">
+            <p class="step-text">2. SCHRITT</p>
+            <span class="Preparation-step-text">Mehl mit Backpulver vermischen, mit der Buttermilch zum Teig geben und
+                verrühren. Teig mit einem Eisportionierer auf die Papierförmchen verteilen. Cupcakes im vorgeheizten
+                Ofen ca. 18 Minuten backen. Vorsichtig aus dem Blech holen und vollständig auf einem Kuchengitter
+                abkühlen lassen.</span>
+        </div>
+        <div class="preparation-steps">
+            <p class="step-text">3. SCHRITT</p>
+            <span class="Preparation-step-text">Für die Buttercreme die Butter hell aufschlagen. Puderzucker gesiebt
+                nach und nach dazugeben, Vanilleextrakt und Milch dazugeben und weiterschlagen. Buttercreme in einen
+                Spritzbeutel mit Sterntülle füllen und auf die abgekühlten Cupcakes spritzen. Nach Belieben mit
+                Zuckerperlen dekorieren und servieren.</span>
+        </div>
+        <h3>Rezept Erstellt von</h3>
+        <div class="profil-container">
             <img class="profil-img" src="./assets/img/profile.png" alt="profil picture">
             <span class="producer">Christina</span>
-            </div>
-     </section>
- <footer>
-        <div class="footer-inner">
+        </div>
+    </section>
+
+
+    <footer class="site-footer">
+        <div class="footer-inner container">
             <div class="footercontent">
                 <img class="footerLogo" src="./assets/img/logo.png" alt="Kochwelt.img">
             </div>
