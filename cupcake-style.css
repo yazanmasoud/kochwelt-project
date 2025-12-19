@@ -12,10 +12,8 @@ h1 {
     margin: 0;
 }
 
-
-main {
-    display: block;
-    flex-direction: column;
+.main-section {
+    padding: 0px 16px;
 }
 
 .cupcake-img {
