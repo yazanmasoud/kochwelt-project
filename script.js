@@ -14,11 +14,3 @@ function sendMail(event){﻿
         console.log(error);
     });
 }
-function sendMail(event) {
-    event.preventDefault();
-
-    document.getElementById("form-feedback").innerText =
-        "Danke! Deine Nachricht wurde erfolgreich gesendet.";
-
-    event.target.reset();
-}
