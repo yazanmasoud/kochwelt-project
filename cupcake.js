@@ -5,7 +5,7 @@ function AmoutOfIndgredients() {
     let amounts = document.querySelectorAll(".Portionen");
 
    if (inputValue === "" || inputValue < "0" || inputValue === "0") {
-        return alert("Ungültige Eingabe! Zahl muss zwischen 1 und 20 liegen.");
+        return alert("Ungültige Eingabe!");
     }
 
     else {
