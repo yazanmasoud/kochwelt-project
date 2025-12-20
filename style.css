@@ -142,7 +142,7 @@ nav {
 .hero-content {
     display: flex;
     align-items: flex-start;
-    padding: 24px 0;
+    padding: 24px 16px;
     gap: 50px;
 }
 
@@ -168,7 +168,6 @@ nav {
 
 }
 
-/* hihi */
 /* Croissant Cards */
 .menu-section {
     background-color: #f0f0f0;
@@ -248,7 +247,6 @@ nav {
     background-color: #232323;
     color: #fff;
     padding: 24px 0;
-    flex-shrink: 0;
 }
 footer{
     width: 100%;
@@ -258,7 +256,7 @@ footer{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
+
 }
 
 .footerLogo {
@@ -345,6 +343,7 @@ footer{
         display: flex !important;
     }
 
+
 }
 
 
@@ -367,6 +366,7 @@ footer{
 
     .hero-recipe-description {
         align-items: center;
+        padding: 16px;
     }
 
     .hero-paragraph {
@@ -389,7 +389,7 @@ footer{
         align-items: center;
         display: flex;
         flex-direction: column;
-        padding: 32px 50px;
+        padding: 32px;
     }
 
     .compare-section-content {
@@ -416,13 +416,15 @@ footer{
         height: 25px;
     }
 
-    .footer-inner {
-        padding-inline: 0px;
-    }
 
     h2 {
         font-size: 20px;
     }
+}
+@media (max-width: 640px) {
+.header-inner{
+    align-items: center;
+}
 }
 
 @media(max-width: 550px) {
